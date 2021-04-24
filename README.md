@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 - 🔭 I’m currently working on Front-End.
-- 🌱 I’m currently learning JAVASCRIPT skills.
+- 🌱 I’m currently learning JAVASCRIPT skills and REACT.
 - 👯 I’m looking to collaborate on HTML, CSS and JAVASCRIPT.
 - 🤔 I’m looking for help with JAVASCRIPT
 - 📫 How to reach me: @hcmwebs on {twitter}
