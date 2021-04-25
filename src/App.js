@@ -1,10 +1,16 @@
-import Header from './Components/Header';
-
+import Header from './js/Header';
+import Nav from './js/Nav';
+import Main from './js/Main';
+import { IconContext } from 'react-icons';
 function App() {
   return (
-    <div className='container'>
-      <h1>Hello from hcmwebs</h1>
-    </div>
+    <IconContext.Provider value={{ color: 'red', size: '2rem' }}>
+      <div className='container'>
+        <Nav />
+        <Header />
+        <Main />
+      </div>
+    </IconContext.Provider>
   );
 }
 
