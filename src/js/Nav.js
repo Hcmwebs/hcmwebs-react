@@ -1,4 +1,5 @@
 import logo from '../images/logo.png';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Nav = () => {
   return (
@@ -21,7 +22,8 @@ const Nav = () => {
           <a href='/contact'>Contact</a>
         </li>
       </ul>
-      <div className='hamburger'></div>
+      <FaBars />
+      <FaTimes />
     </nav>
   );
 };
