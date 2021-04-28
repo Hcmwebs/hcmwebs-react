@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className='nav'>
       <div className='logo'>
         <img src={logo} alt='Logo' />
       </div>

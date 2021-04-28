@@ -1,7 +1,2 @@
-@use '../abstracts/' as *;
-
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-  }
-}
+$tablet: 768px;
+$bigScreen: 1440px;

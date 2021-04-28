@@ -1,14 +1,18 @@
 @use '../abstracts/' as *;
-
+@use '../base/typo' as *;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $fontStack;
+  font-size: $fontSize;
   background-color: $bgColor;
 }
 .container {
   max-width: 1440px;
   width: 80%;
+  min-height: 100vh;
   margin: 0 auto;
+  @include flex(column, space-between, center);
 }
