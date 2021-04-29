@@ -45,8 +45,7 @@ button {
 
 .nav {
   width: 100%;
-  min-height: 60px;
-  background-color: #ccc;
+  min-height: 50px;
   position: fixed;
   top: 0;
   left: 0;
@@ -57,6 +56,7 @@ button {
 }
 .nav .logo {
   width: 150px;
+  padding: 2rem 0;
   display: grid;
   place-items: center;
 }
@@ -66,9 +66,8 @@ button {
   object-fit: cover;
 }
 .nav .navBar {
-  max-width: 400px;
   width: 100%;
-  margin: 2rem;
+  padding: 2rem 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -104,17 +103,30 @@ button {
 .nav .navBar li a:hover:before {
   width: 100%;
 }
+.nav .hamburger {
+  display: block;
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+}
+.nav .hamburger.open {
+  color: #c6ecea;
+}
 
 @media (min-width: 768px) {
   .nav {
     flex-direction: row;
   }
   .nav .navBar {
+    width: auto;
     flex-direction: row;
     margin: 0;
   }
   .nav .navBar li {
     width: auto;
+  }
+  .nav .hamburger {
+    display: none;
   }
 }
 
