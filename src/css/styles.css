@@ -59,6 +59,7 @@ button {
   padding: 2rem;
   display: grid;
   place-items: center;
+  z-index: 9;
 }
 .nav .logo img {
   width: 100%;
@@ -73,8 +74,13 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  display: none;
+  position: absolute;
+  top: 80px;
+  right: -100%;
+  transition: all 0.6s ease-in-out;
+}
+.nav .navBar.open {
+  right: 0%;
 }
 .nav .navBar li {
   width: 100%;
@@ -124,13 +130,9 @@ button {
     width: auto;
     flex-direction: row;
     margin: 0;
-    display: inline-flex;
   }
   .nav .navBar li {
     width: auto;
-  }
-  .nav .hamburger {
-    display: none;
   }
 }
 .header {
