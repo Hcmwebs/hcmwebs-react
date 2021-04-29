@@ -74,6 +74,7 @@ button {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  display: none;
 }
 .nav .navBar li {
   width: 100%;
@@ -123,6 +124,7 @@ button {
     width: auto;
     flex-direction: row;
     margin: 0;
+    display: inline-flex;
   }
   .nav .navBar li {
     width: auto;
@@ -130,6 +132,15 @@ button {
   .nav .hamburger {
     display: none;
   }
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #ff965e;
+}
+.header .heroText {
+  height: 100%;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
