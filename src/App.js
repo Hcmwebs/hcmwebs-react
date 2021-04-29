@@ -5,7 +5,7 @@ import { IconContext } from 'react-icons';
 function App() {
   return (
     <IconContext.Provider
-      value={{ color: ' rgba(198, 236, 234, 1)', size: '30px' }}>
+      value={{ color: ' rgba(198, 236, 234, 1)', size: '3rem' }}>
       <div className='container'>
         <Nav />
         <Header />

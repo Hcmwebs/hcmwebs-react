@@ -10,7 +10,7 @@
 
   .logo {
     width: 150px;
-    padding: 2rem 0;
+    padding: 2rem;
     @include grid(center);
 
     img {
@@ -25,6 +25,7 @@
     padding: 2rem 0;
     list-style: none;
     @include flex(column, space-between, center);
+    position: relative;
 
     li {
       width: 100%;
@@ -38,10 +39,9 @@
       a {
         width: 100%;
         display: block;
-
+        padding: 1.2rem 2.4rem;
         text-decoration: none;
         color: $secondaryTextColor;
-
         position: relative;
 
         &::before {
@@ -66,7 +66,7 @@
   .hamburger {
     display: block;
     position: absolute;
-    top:3.5rem;
+    top: 3.5rem;
     right: 2rem;
 
     &.open {

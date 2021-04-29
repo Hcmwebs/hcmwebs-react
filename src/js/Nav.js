@@ -1,9 +1,11 @@
 import logo from '../images/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const Nav = () => {
-  const [isOpen, setOpen] = useState('False');
+  // const [isOpen, setIsOpen] = useState('False');
+
+
 
   return (
     <nav className='nav'>
