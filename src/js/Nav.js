@@ -1,11 +1,9 @@
 import logo from '../images/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 const Nav = () => {
-  // const [isOpen, setIsOpen] = useState('False');
-
-
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className='nav'>
@@ -13,7 +11,7 @@ const Nav = () => {
         <img src={logo} alt='Logo' />
       </div>
 
-      <ul className='navBar'>
+      <ul className={(isOpen ? 'open' : '') + ' navBar'}>
         <li>
           <a href='/'>Home</a>
         </li>
@@ -27,8 +25,9 @@ const Nav = () => {
           <a href='/contact'>Contact</a>
         </li>
       </ul>
-      <FaBars className='hamburger' />
-      <FaTimes className='hamburger' color='rgba(255, 150, 94, 1)' />
+      <span className='hamburger' onClick={() => setIsOpen(true)}>
+        {isOpen ? <FaTimes color='rgba(255, 150, 94, 1)' /> : <FaBars />}
+      </span>
     </nav>
   );
 };

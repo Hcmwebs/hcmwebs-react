@@ -12,6 +12,7 @@
     width: 150px;
     padding: 2rem;
     @include grid(center);
+    z-index: 9;
 
     img {
       width: 100%;
@@ -25,8 +26,14 @@
     padding: 2rem 0;
     list-style: none;
     @include flex(column, space-between, center);
-    position: relative;
-    display: none;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    transition: all 0.6s ease-in-out;
+
+    &.open {
+      right:0%
+    }
 
     li {
       width: 100%;
@@ -82,7 +89,6 @@
       width: auto;
       flex-direction: row;
       margin: 0;
-      display: inline-flex;
 
       li {
         width: auto;
@@ -90,7 +96,7 @@
     }
 
     .hamburger {
-      display: none;
+      // display: none;
     }
   }
 }
