@@ -3,7 +3,7 @@ const Header = () => {
     <header className='header'>
       <div className='heroText'>
         <h1>
-          Hi, I am <span>Heze</span>{' '}
+          Hi, I am <span>Heze</span>
         </h1>
         <p>I am a Frontend Developer</p>
         <p>
