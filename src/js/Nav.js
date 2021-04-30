@@ -1,42 +1,29 @@
-import logo from '../images/logo.png';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import Hamburger from './Hamburger';
+import Logo from './Logo';
+import Navbar from './Navbar';
 
 const Nav = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = index => {
-    if (isOpen === index) {
-      return setIsOpen();
+  const [isOpen, setIsOpen] = useState('');
+  const toggle = () => {
+    if (!isOpen) {
+      return setIsOpen(true);
+    } else {
+      return setIsOpen(false);
     }
   };
 
   return (
     <nav className='nav'>
-      <div className='logo'>
-        <img src={logo} alt='Logo' />
-      </div>
-
-      <ul className={(isOpen ? 'open' : '') + ' navBar'}>
-        <li>
-          <a href='/'>Home</a>
-        </li>
-        <li>
-          <a href='/about'>About</a>
-        </li>
-        <li>
-          <a href='/projects'>Projects</a>
-        </li>
-        <li>
-          <a href='/contact'>Contact</a>
-        </li>
-      </ul>
-      <span
-        className='hamburger'
-        onClick={() => {
-          setIsOpen(true);
-        }}>
-        {isOpen ? <FaTimes color='rgba(255, 150, 94, 1)' /> : <FaBars />}
-      </span>
+      <Logo />
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Hamburger
+        FaBars={FaBars}
+        FaTimes={FaTimes}
+        toggle={toggle}
+        isOpen={isOpen}
+      />
     </nav>
   );
 };
