@@ -4,6 +4,11 @@ import { useState } from 'react';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const toggle = index => {
+    if (isOpen === index) {
+      return setIsOpen();
+    }
+  };
 
   return (
     <nav className='nav'>
@@ -25,7 +30,11 @@ const Nav = () => {
           <a href='/contact'>Contact</a>
         </li>
       </ul>
-      <span className='hamburger' onClick={() => setIsOpen(true)}>
+      <span
+        className='hamburger'
+        onClick={() => {
+          setIsOpen(true);
+        }}>
         {isOpen ? <FaTimes color='rgba(255, 150, 94, 1)' /> : <FaBars />}
       </span>
     </nav>
