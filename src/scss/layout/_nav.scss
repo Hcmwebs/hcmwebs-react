@@ -2,7 +2,7 @@
 
 .nav {
   width: 100%;
-  min-height: 11rem;
+  height: 8.7rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,6 +11,9 @@
   .logo {
     width: 150px;
     padding: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
     @include grid(center);
     z-index: 9;
 
@@ -23,16 +26,17 @@
 
   .navBar {
     width: 100%;
+    height: 100vh;
     padding: 2rem 0;
     list-style: none;
-    @include flex(column, space-between, center);
+    @include flex(column, center, center);
     position: absolute;
-    top: 80px;
+    top: 0;
     right: -100%;
     transition: all 0.6s ease-in-out;
 
     &.open {
-      right:0%
+      right: 0%;
     }
 
     li {
@@ -71,13 +75,17 @@
   }
 
   .hamburger {
+    font-family: $fontStack;
+    font-weight: 300;
     display: block;
     position: absolute;
-    top: 3.5rem;
+    top: 2rem;
     right: 2rem;
+    transform: translate(-50% -50%);
+    transition: all 0.6s ease-in-out;
 
     &.open {
-      color: $secondaryTextColor;
+      transform: rotate(180deg);
     }
   }
 }
@@ -86,9 +94,10 @@
     flex-direction: row;
 
     .navBar {
-      width: auto;
+      width: 80%;
+      height: 100%;
+      right: 0;
       flex-direction: row;
-      margin: 0;
 
       li {
         width: auto;
@@ -96,7 +105,7 @@
     }
 
     .hamburger {
-      // display: none;
+      display: none;
     }
   }
 }
