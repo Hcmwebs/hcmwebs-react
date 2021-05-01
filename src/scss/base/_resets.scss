@@ -14,5 +14,6 @@
   width: 80%;
   min-height: 100vh;
   margin: 0 auto;
-  @include flex(column, space-between, center)
+  @include flex(column, space-between, center);
+  background-color: $secondaryTextColor;
 }
