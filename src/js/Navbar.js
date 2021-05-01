@@ -20,3 +20,4 @@ const Navbar = ({ isOpen, isActive }) => {
 };
 
 export default Navbar;
+
