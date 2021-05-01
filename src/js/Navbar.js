@@ -1,8 +1,10 @@
-const Navbar = isOpen => {
+const Navbar = ({ isOpen, isActive }) => {
   return (
     <ul className={(isOpen ? 'open' : '') + ' navBar'}>
       <li>
-        <a href='/'>Home</a>
+        <a href='/' className={isActive ? 'active' : ''}>
+          Home
+        </a>
       </li>
       <li>
         <a href='/about'>About</a>
