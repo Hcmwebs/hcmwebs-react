@@ -4,7 +4,7 @@ import Projects from './Projects';
 
 const Main = () => {
   return (
-    <main>
+    <main className = 'main'>
       <About />
       <Projects />
       <Contact />
