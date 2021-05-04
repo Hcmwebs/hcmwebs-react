@@ -2,33 +2,50 @@
 
 .header {
   width: 100%;
-  height: 50vh;
+  min-height: 100vh;
   margin: 10rem auto;
   background-color: $secondaryTextColor;
   @include flex(row, center, center);
 
   .heroText {
-    width: 80%;
-    margin: 4rem auto;
-    background-color: transparent;
-  }
-
-  h1 {
-    font-size: 3.6rem;
-    font-weight: 300;
+    width: 100%;
     margin: 0 auto;
-    text-align: center;
+    @include flex(column, space-between, center);
 
-    span {
-      font-size: 4.0rem;
-      font-weight: 400;
+    h1 {
+      font-size: clamp(1rem, 10vw, 2rem);
+      font-weight: 300;
+      margin: 0 auto;
+      text-align: center;
+
+      span {
+        font-size: 6rem;
+        font-weight: 400;
+        color: $secondaryColor;
+      }
+    }
+    p {
+      font-size: clamp(1rem, 5vw, 2rem);
+      font-weight: 300;
+      padding: 1rem 0;
+      text-align: center;
+
+      span {
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 0 1rem;
+      }
+    }
+
+    .signature {
+      font-family: $fontStackSignature;
+      font-weight: 300;
+      font-size: 6rem;
+      text-align: center;
+      transform: rotate(-10deg);
+      margin: 4 rem auto;
+      padding: 2rem 0;
       color: $secondaryColor;
     }
-  }
-  p {
-    font-size: 1.6rem;
-    font-weight: 300;
-    padding: 1rem 0;
-    text-align: center;
   }
 }
