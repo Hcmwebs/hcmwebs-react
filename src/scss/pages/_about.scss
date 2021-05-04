@@ -1,0 +1,43 @@
+@use '../abstracts/'as *;
+
+.about {
+  width: 100%;
+  min-height: 50vh;
+  margin: 0 auto;
+  @include flex(column, center, center);
+  gap: 2rem;
+  background-color: $secondaryTextColor;
+  border-radius: $borderRadius;
+
+  &__header {
+    width: 100%;
+    margin: 0 auto;
+    @include grid(center);
+
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border: 5px solid $secondaryColor;
+      border-radius: 50%;
+    }
+  }
+  &__body {
+    width: 100%;
+    padding: 2rem;
+    @include grid(center);
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 300;
+      text-align: center;
+      color: $primaryTextColor;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .about {
+    flex-direction: row;
+  }
+}
