@@ -29,7 +29,6 @@ button {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 10px;
-  background-color: #30b3ac;
 }
 
 .container {
@@ -49,6 +48,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #30b3ac;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,6 +81,7 @@ button {
   position: absolute;
   top: 0;
   right: -100%;
+  background-color: #30b3ac;
   transition: all 0.6s ease-in-out;
 }
 .nav .navBar.open {
@@ -99,7 +100,7 @@ button {
   display: block;
   padding: 1.2rem 2.4rem;
   text-decoration: none;
-  color: #c6ecea;
+  color: white;
   position: relative;
 }
 .nav .navBar li a::before {
@@ -153,18 +154,35 @@ button {
 }
 .header {
   width: 100%;
+  height: 50vh;
   margin: 10rem auto;
-  background-color: #ff965e;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .header .heroText {
-  width: 70%;
-  min-height: 400px;
+  width: 80%;
   margin: 4rem auto;
-  background-color: #fff;
+  background-color: transparent;
+}
+.header h1 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+}
+.header h1 span {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #ff965e;
+}
+.header p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,7 +6,7 @@ const App = () => {
   return (
     <IconContext.Provider
       value={{
-        color: ' rgba(198, 236, 234, 1)',
+        color: ' rgba(255,255, 255, 1)',
         size: '3rem',
       }}>
       <div className='container'>
