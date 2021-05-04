@@ -13,7 +13,7 @@
     @include flex(column, space-between, center);
 
     h1 {
-      font-size: clamp(1rem, 10vw, 2rem);
+      font-size: clamp(3rem, 10vw, 5rem);
       font-weight: 300;
       margin: 0 auto;
       text-align: center;
@@ -25,7 +25,7 @@
       }
     }
     p {
-      font-size: clamp(1rem, 5vw, 2rem);
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 300;
       padding: 1rem 0;
       text-align: center;
@@ -43,8 +43,8 @@
       font-size: 6rem;
       text-align: center;
       transform: rotate(-10deg);
-      margin: 4 rem auto;
-      padding: 2rem 0;
+      margin: 4rem auto;
+      padding: 2rem;
       color: $secondaryColor;
     }
   }
