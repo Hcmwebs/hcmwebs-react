@@ -110,7 +110,7 @@ button {
   left: 0;
   width: 0%;
   height: 0.1rem;
-  transform: translateY(1rem);
+  transform: translateY(0.5rem);
   background-color: #ff965e;
   transition: all 0.6s ease-in-out;
 }
