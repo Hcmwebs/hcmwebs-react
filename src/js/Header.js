@@ -7,7 +7,7 @@ const Header = () => {
         </h1>
         <p>I am a Frontend Developer</p>
         <p>
-          UI/UX Designer <span> & </span> Developer
+          UI/UX Designer <span> & </span>   Developer
         </p>
         <p className='signature'>hcmwebs</p>
       </div>
