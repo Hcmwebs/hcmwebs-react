@@ -32,7 +32,7 @@ button {
 }
 
 body {
-  background-color: #30b3ac;
+  background-color: #189488;
 }
 
 .container {
@@ -52,7 +52,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #30b3ac;
+  background-color: #189488;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,7 +85,7 @@ body {
   position: absolute;
   top: 0;
   right: -100%;
-  background-color: #30b3ac;
+  background-color: #189488;
   transition: all 0.6s ease-in-out;
 }
 .nav .navBar.open {
@@ -168,14 +168,15 @@ body {
 .header .heroText {
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem;
   border: none;
+  border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: white;
-  background-color: #30b3ac;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .header .heroText h1 {
   font-size: clamp(3rem, 10vw, 5rem);
@@ -198,15 +199,6 @@ body {
   font-size: 2rem;
   font-weight: 400;
   padding: 0 1rem;
-}
-.header .heroText p.signature {
-  font-family: "Clicker Script", cursive;
-  font-weight: 300;
-  font-size: 5rem;
-  text-align: center;
-  transform: rotate(-10deg);
-  padding: 2rem;
-  color: #ff965e;
 }
 
 .about {
