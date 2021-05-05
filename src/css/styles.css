@@ -168,7 +168,7 @@ body {
 .header .heroText {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem;
   border: none;
   border-radius: 0.4rem;
   display: flex;
@@ -215,7 +215,7 @@ body {
 }
 .about__header {
   width: 100%;
-  margin: 0 auto;
+  max-width: 300px;
   display: grid;
   place-items: center;
 }
@@ -228,6 +228,7 @@ body {
 }
 .about__body {
   width: 100%;
+  max-width: 400px;
   padding: 2rem;
   display: grid;
   place-items: center;
