@@ -14,7 +14,8 @@
     border-radius: $borderRadius;
     @include flex(column, space-between, center);
     color: $secondaryTextColor;
-    background-color: $overlayColor;
+    background-color: darken($bgColor, 10);
+    box-shadow: $boxShadow;
 
     h1 {
       font-size: clamp(3rem, 10vw, 5rem);
