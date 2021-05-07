@@ -6,7 +6,7 @@
   margin: 0 auto;
   @include grid(center);
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
 
   section {
     min-height: 30vh;
