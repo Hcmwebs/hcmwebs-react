@@ -2,6 +2,7 @@
 
 .projects {
   width: 100%;
+  padding: 3rem 1rem;
   @include grid(center);
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   background-color: $bgColor;
@@ -10,19 +11,29 @@
 
   div {
     width: 80%;
+    height: 15rem;
     padding: 2rem 0;
     @include grid(center);
     border-radius: $borderRadius;
     box-shadow: $boxShadow;
     gap: 2rem;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      box-shadow: $boxShadowHover;
+      transform: scale(0.98);
+    }
 
     a {
+      width: 100%;
+      max-width: 250px;
       cursor: pointer;
       text-decoration: none;
       color: $secondaryTextColor;
+      padding: 3rem;
       border: none;
       text-align: center;
-      @include flex(row, center, center);
+      @include flex(row, space-between, center);
       gap: 1rem;
     }
   }
