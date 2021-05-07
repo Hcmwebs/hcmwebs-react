@@ -2,7 +2,6 @@
 
 .about {
   width: 100%;
-  min-height: 50vh;
   margin: 0 auto;
   @include flex(column, center, center);
   gap: 2rem;
@@ -25,7 +24,7 @@
   &__body {
     width: 100%;
     max-width: 400px;
-    padding: 2rem;
+    padding: 0 3rem;
     @include grid(center);
 
     p {
@@ -40,5 +39,15 @@
 @media (min-width: $tablet) {
   .about {
     flex-direction: row;
+
+    &__body {
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 0 1rem;
+
+      p {
+        text-align: left;
+      }
+    }
   }
 }

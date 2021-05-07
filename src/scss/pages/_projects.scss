@@ -1,0 +1,29 @@
+@use '../abstracts/'as *;
+
+.projects {
+  width: 100%;
+  @include grid(center);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: $bgColor;
+  gap: 2rem;
+  border-radius: $borderRadius;
+
+  div {
+    width: 80%;
+    padding: 2rem 0;
+    @include grid(center);
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    gap: 2rem;
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: $secondaryTextColor;
+      border: none;
+      text-align: center;
+      @include flex(row, center, center);
+      gap: 1rem;
+    }
+  }
+}
