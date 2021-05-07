@@ -2,7 +2,6 @@
 
 .header {
   width: 100%;
-  min-height: 50vh;
   margin: 10rem auto;
   @include flex(row, center, center);
 
@@ -15,7 +14,6 @@
     @include flex(column, space-between, center);
     color: $secondaryTextColor;
     background-color: darken($bgColor, 10);
-
     box-shadow: $boxShadow;
 
     h1 {
@@ -27,7 +25,7 @@
       span {
         font-size: 6rem;
         font-weight: 400;
-        color: lighten($secondaryColor, 20);
+        color: $secondaryColor;
       }
     }
     p {
