@@ -158,7 +158,8 @@ body {
 }
 .header {
   width: 100%;
-  margin: 10rem auto;
+  min-height: 100vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -176,7 +177,6 @@ body {
   align-items: center;
   color: white;
   background-color: #146169;
-  box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.2);
 }
 .header .heroText h1 {
   font-size: clamp(3rem, 10vw, 5rem);
@@ -276,7 +276,7 @@ body {
 }
 .projects div:hover {
   box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.5);
-  transform: scale(0.98);
+  transform: scale(0.99);
 }
 .projects div a {
   width: 100%;
@@ -304,7 +304,6 @@ body {
 }
 .main section {
   min-height: 30vh;
-  box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=styles.css.map */
