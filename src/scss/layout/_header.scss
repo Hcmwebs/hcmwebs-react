@@ -15,6 +15,7 @@
     @include flex(column, space-between, center);
     color: $secondaryTextColor;
     background-color: darken($bgColor, 10);
+
     box-shadow: $boxShadow;
 
     h1 {
@@ -26,7 +27,7 @@
       span {
         font-size: 6rem;
         font-weight: 400;
-        color: $secondaryColor;
+        color: lighten($secondaryColor, 20);
       }
     }
     p {
