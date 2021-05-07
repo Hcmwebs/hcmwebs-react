@@ -6,7 +6,7 @@ const Hamburger = ({ toggle, FaTimes, FaBars, isOpen }) => {
         onClick={() => {
           toggle();
         }}>
-        {isOpen ? <FaTimes color='rgba(255, 150, 94, 1)' /> : <FaBars />}
+        {isOpen ? <FaTimes color='rgba(224, 78, 62, 1)' /> : <FaBars />}
       </span>
     </>
   );
