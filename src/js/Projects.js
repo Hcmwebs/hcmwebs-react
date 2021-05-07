@@ -1,4 +1,4 @@
-import { GiFrenchFries, GiToyMallet, GiShoppingCart } from 'react-icons/gi';
+import { GiToyMallet, GiShoppingCart } from 'react-icons/gi';
 import { BsGrid3X2GapFill, BsChatQuoteFill } from 'react-icons/bs';
 import { TiWeatherPartlySunny } from 'react-icons/ti';
 import { RiQuestionAnswerFill } from 'react-icons/ri';
