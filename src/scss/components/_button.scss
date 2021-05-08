@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+.btn__primary {
+  color: $secondaryTextColor;
+  background-color: $secondaryColor;
+  border: none;
+  border-radius: $borderRadius;
+}
