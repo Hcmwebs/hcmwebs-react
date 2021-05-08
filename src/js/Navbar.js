@@ -13,6 +13,9 @@ const Navbar = ({ isOpen, isActive }) => {
         <a href='/projects'>Projects</a>
       </li>
       <li>
+        <a href='/tools'>Tools</a>
+      </li>
+      <li>
         <a href='/contact'>Contact</a>
       </li>
     </ul>
@@ -20,4 +23,3 @@ const Navbar = ({ isOpen, isActive }) => {
 };
 
 export default Navbar;
-
