@@ -1,6 +1,6 @@
 const About = () => {
   const profileImage =
-    'https://res.cloudinary.com/duymkqhnm/image/upload/v1608460164/hcmwebs/hcmwebs/profiles/IMG_3327_l9pp8q.jpg';
+    'https://res.cloudinary.com/duymkqhnm/image/upload/v1608460164/hcmwebs/hcmwebs/profiles/personal/IMG_3327_l9pp8q.jpg';
   return (
     <section className='about'>
       <div className='about__header'>
