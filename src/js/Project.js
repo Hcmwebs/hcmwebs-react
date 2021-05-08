@@ -1,4 +1,4 @@
-const Project = ({ BsGrid3X2GapFill }) => {
+const Project = ({BsGrid3X2GapFill, }) => {
   return (
     <div className='projects__item'>
       <a
