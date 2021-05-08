@@ -2,6 +2,7 @@ import { GiToyMallet, GiShoppingCart } from 'react-icons/gi';
 import { BsGrid3X2GapFill, BsChatQuoteFill } from 'react-icons/bs';
 import { TiWeatherPartlySunny } from 'react-icons/ti';
 import { RiQuestionAnswerFill } from 'react-icons/ri';
+import { FaGlobeAmericas } from 'react-icons/fa';
 import Project from './Project';
 
 const Projects = () => {
@@ -52,6 +53,15 @@ const Projects = () => {
             <BsChatQuoteFill color='rgba(224, 78, 62, 1)' />
           </span>
           Testimonials
+        </a>
+      </div>
+
+      <div className='projects__item'>
+        <a href='https://www.waikatohispano.org.nz/' target='_blank'>
+          <span>
+            <FaGlobeAmericas color='rgba(224, 78, 62, 1)' />
+          </span>
+          Waikato Hispano Latino
         </a>
       </div>
     </section>
