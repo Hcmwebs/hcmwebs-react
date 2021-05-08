@@ -12,6 +12,7 @@ const About = () => {
           front-end developer. I love designing and building user-friendly
           interfaces that offer a good user experience.
         </p>
+        <button className='btn__primary'>Projects</button>
       </div>
     </section>
   );

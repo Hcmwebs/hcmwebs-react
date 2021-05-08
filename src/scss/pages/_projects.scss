@@ -2,14 +2,13 @@
 
 .projects {
   width: 100%;
-  padding: 3rem 1rem;
   @include grid(center);
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   background-color: $bgColor;
   gap: 2rem;
   border-radius: $borderRadius;
 
-  div {
+  &__item {
     width: 80%;
     height: 15rem;
     padding: 2rem 0;
@@ -21,7 +20,7 @@
 
     &:hover {
       box-shadow: $boxShadowHover;
-      transform: scale(0.98);
+      transform: scale(0.99);
     }
 
     a {
