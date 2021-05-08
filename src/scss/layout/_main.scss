@@ -4,11 +4,13 @@
 .main {
   width: 100%;
   margin: 0 auto;
+  padding: 3rem 0;
   @include grid(center);
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 10rem;
 
   section {
     min-height: 30vh;
+    padding: 3rem 0;
   }
 }
