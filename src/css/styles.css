@@ -255,7 +255,6 @@ body {
 }
 .projects {
   width: 100%;
-  padding: 3rem 1rem;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -297,13 +296,15 @@ body {
 .main {
   width: 100%;
   margin: 0 auto;
+  padding: 3rem 0;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 10rem;
 }
 .main section {
   min-height: 30vh;
+  padding: 3rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
