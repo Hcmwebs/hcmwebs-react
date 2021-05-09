@@ -9,7 +9,8 @@ const Tools = tool => {
     <IconContext.Provider
       value={{
         color: ' rgba(224, 78, 62, 1)',
-        size: '10rem',
+        size: '8rem'
+
       }}>
       <section className='tools'>
         <div className='tools__header'>
