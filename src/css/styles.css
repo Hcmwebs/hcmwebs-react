@@ -232,6 +232,7 @@ body {
   display: grid;
   place-items: center;
   border: 1px solid #e04e3e;
+  border-radius: 0.4rem;
 }
 .tool span svg {
   height: 100px;
