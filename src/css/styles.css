@@ -219,6 +219,25 @@ body {
   border-radius: 0.4rem;
 }
 
+.tool {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.tool span {
+  width: 100px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e04e3e;
+}
+.tool span svg {
+  height: 100px;
+  object-fit: cover;
+}
+
 .about {
   width: 100%;
   margin: 0 auto;
@@ -309,6 +328,32 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+}
+
+.tools {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.tools__header {
+  width: 80%;
+  padding: 3rem 0;
+  display: grid;
+  place-items: center;
+}
+.tools__header h4 {
+  width: 60%;
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  font-weight: 700;
+  text-align: center;
+}
+.tools__body {
+  padding: 0 4rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .main {
