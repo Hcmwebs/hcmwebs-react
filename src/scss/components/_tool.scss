@@ -9,6 +9,7 @@
     width: 100px;
     @include grid(center);
     border: 1px solid $secondaryColor;
+    border-radius: $borderRadius;
 
     svg {
       height: 100px;
