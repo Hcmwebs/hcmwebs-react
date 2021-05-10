@@ -9,9 +9,7 @@ const Main = () => {
       <About />
       <Projects />
       <Tools />
-      <Contact />
     </main>
   );
 };
-
 export default Main;

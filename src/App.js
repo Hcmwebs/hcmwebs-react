@@ -1,7 +1,8 @@
+import { IconContext } from 'react-icons';
 import Header from './js/Header';
 import Nav from './js/Nav';
 import Main from './js/Main';
-import { IconContext } from 'react-icons';
+import Footer from './js/Footer';
 const App = () => {
   return (
     <IconContext.Provider
@@ -13,6 +14,7 @@ const App = () => {
         <Nav />
         <Header />
         <Main />
+        <Footer />
       </div>
     </IconContext.Provider>
   );
