@@ -5,6 +5,7 @@
   min-height: 100vh;
   margin: 0 auto;
   @include flex(row, center, center);
+  background-color: darken($bgColor, 10);
 
   .heroText {
     width: 100%;
@@ -14,7 +15,7 @@
     border-radius: $borderRadius;
     @include flex(column, space-between, center);
     color: $secondaryTextColor;
-    background-color: darken($bgColor, 10);
+
 
     h1 {
       font-size: clamp(3rem, 10vw, 5rem);
