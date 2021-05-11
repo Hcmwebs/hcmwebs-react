@@ -2,7 +2,6 @@
 @use '../components/'as *;
 
 .tools {
-  width: 100%;
   @include grid(center);
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -13,16 +12,15 @@
     @include grid(center);
 
     h4 {
-      width: 60%;
+      width: 70%;
       font-size: clamp(2.5rem, 3vw, 3.5rem);
       font-weight: 700;
       text-align: center;
     }
   }
   &__body {
+    padding: 3rem 0;
     @include grid(center);
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-
   }
 }
