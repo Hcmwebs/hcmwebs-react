@@ -10,7 +10,7 @@ const Header = () => {
           {' '}
           UI/UX Designer <span> & </span> Developer{' '}
         </p>
-        <p>your next best friend!</p>
+        <p>Your next best friend!</p>
       </div>
     </header>
   );
