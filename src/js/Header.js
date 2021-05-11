@@ -5,10 +5,12 @@ const Header = () => {
         <h1>
           Hi, I am <span>Heze</span>
         </h1>
-        <p>I am a Frontend Developer</p>
+        <p>I build great and awesome websites </p>
         <p>
-          UI/UX Designer <span> & </span> Developer
+          {' '}
+          UI/UX Designer <span> & </span> Developer{' '}
         </p>
+        <p>your next best friend!</p>
       </div>
     </header>
   );
