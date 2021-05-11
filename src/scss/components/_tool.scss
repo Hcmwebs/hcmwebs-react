@@ -9,5 +9,6 @@
     @include grid(center);
     border: 1px solid $secondaryColor;
     border-radius: $borderRadius;
+    box-shadow: $boxShadow;
   }
 }
