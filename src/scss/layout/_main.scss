@@ -2,7 +2,7 @@
 @use '../pages/' as *;
 
 .main {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 3rem 0;
   @include grid(center);
@@ -10,6 +10,7 @@
   gap: 10rem;
 
   section {
+    width: 80%;
     min-height: 30vh;
     padding: 3rem 0;
   }
