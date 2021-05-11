@@ -2,7 +2,7 @@
 @use '../pages/' as *;
 
 .main {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   padding: 3rem 0;
   @include grid(center);
