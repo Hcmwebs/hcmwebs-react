@@ -1,4 +1,4 @@
-const Project = ({BsGrid3X2GapFill, }) => {
+const Project = ({ BsGrid3X2GapFill }) => {
   return (
     <div className='projects__item'>
       <a
@@ -6,7 +6,7 @@ const Project = ({BsGrid3X2GapFill, }) => {
         target='_blank'
         noreferrer='https://github.com/'>
         <span>
-          <BsGrid3X2GapFill color='rgba(224, 78, 62, 1)' />
+          <BsGrid3X2GapFill />
         </span>
         Social Proof UI
       </a>
