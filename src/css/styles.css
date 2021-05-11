@@ -377,8 +377,8 @@ body {
   background-color: #146169;
 }
 .footer__links {
+  width: 80%;
   max-width: 400px;
-  max-width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -386,6 +386,7 @@ body {
   gap: 3rem;
 }
 .footer__links a {
+  border-radius: 0.4rem;
   display: grid;
   place-items: center;
   transition: all 0.6s ease-in-out;

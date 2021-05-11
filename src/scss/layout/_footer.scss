@@ -8,12 +8,13 @@
   background-color: darken($bgColor, 10);
 
   &__links {
+    width: 80%;
     max-width: 400px;
-    max-width: 80%;
     @include flex(row, center, center);
     gap: 3rem;
 
     a {
+      border-radius: $borderRadius;
       @include grid(center);
       transition: all 0.6s ease-in-out;
 
