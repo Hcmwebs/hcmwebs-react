@@ -5,13 +5,13 @@
   width: 100%;
   margin: 0 auto;
   padding: 3rem 0;
-  @include grid(center);
+@include grid(center);
   grid-template-columns: 1fr;
   gap: 10rem;
 
   section {
     width: 80%;
-    min-height: 30vh;
+    min-height: 60vh;
     margin: 0 auto;
     padding: 3rem 0;
   }
