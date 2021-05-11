@@ -3,19 +3,19 @@
 
 .footer {
   width: 100%;
-  margin-top: 10rem;
+  padding: 3rem 0;
   @include grid(center);
   background-color: darken($bgColor, 10);
 
   &__links {
-    width: 50%;
-    @include grid(center);
-    gap: 2rem;
+    width: 300px;
+    max-width: 100%;
+    @include flex(row, center, center);
 
     a {
       width: 100px;
       height: 100px;
-      object-fit: cover;
+      @include grid(center);
     }
   }
 }

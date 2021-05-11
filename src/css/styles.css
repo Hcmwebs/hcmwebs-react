@@ -175,12 +175,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #146169;
+  background-color: #1c8894;
 }
 .header .heroText {
   width: 100%;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 3rem 4rem;
   border: none;
   border-radius: 0.4rem;
   display: flex;
@@ -188,6 +189,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
+  background-color: #146169;
 }
 .header .heroText h1 {
   font-size: clamp(3rem, 10vw, 5rem);
@@ -351,7 +353,6 @@ body {
   text-align: center;
 }
 .tools__body {
-  padding: 0 4rem;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -375,21 +376,24 @@ body {
 
 .footer {
   width: 100%;
-  margin-top: 10rem;
+  padding: 3rem 0;
   display: grid;
   place-items: center;
   background-color: #146169;
 }
 .footer__links {
-  width: 50%;
-  display: grid;
-  place-items: center;
-  gap: 2rem;
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .footer__links a {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  display: grid;
+  place-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

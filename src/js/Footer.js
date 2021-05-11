@@ -10,7 +10,8 @@ const Footer = () => {
   return (
     <IconContext.Provider
       value={{
-        color: 'rgba(224, 78, 62, 1)',
+        color: ' rgba(255,255, 255, 1)',
+        size: '5rem',
       }}>
       <footer className=' footer'>
         <Contacts
