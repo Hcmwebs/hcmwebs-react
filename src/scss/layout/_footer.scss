@@ -5,7 +5,7 @@
   width: 100%;
   padding: 3rem 0;
   @include grid(center);
-  background-color: darken($bgColor, 10);
+  background-color: $bgColor;
 
   &__links {
     width: 80%;
@@ -14,15 +14,16 @@
     gap: 3rem;
 
     a {
+      padding: 0.2rem;
       border-radius: $borderRadius;
       @include grid(center);
       transition: all 0.6s ease-in-out;
 
       &:hover {
         color: $secondaryColor;
-        background-color: darken($bgColor, 20);
+        background-color: darken($bgColor, 10);
         box-shadow: $boxShadowHover;
-        transform: scale(0.99);
+        transform: scale(0.98);
       }
     }
   }
