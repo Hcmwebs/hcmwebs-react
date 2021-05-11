@@ -25,13 +25,13 @@ button {
   margin: 3rem auto;
   padding: 1.2rem 3rem;
   outline: none;
-  box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.6s ease-in-out;
 }
 button:hover {
   transform: scale(0.98);
-  box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -234,7 +234,7 @@ body {
   place-items: center;
   border: 1px solid #e04e3e;
   border-radius: 0.4rem;
-  box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
 }
 
 .about {
@@ -305,12 +305,12 @@ body {
   display: grid;
   place-items: center;
   border-radius: 0.4rem;
-  box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
   gap: 2rem;
   transition: all 0.5s ease-in-out;
 }
 .projects__item:hover {
-  box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.4);
   transform: scale(0.99);
 }
 .projects__item a {
@@ -393,7 +393,7 @@ body {
 .footer__links a:hover {
   color: #e04e3e;
   background-color: #0c393e;
-  box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.4);
   transform: scale(0.99);
 }
 
