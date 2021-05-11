@@ -378,12 +378,13 @@ body {
   background-color: #146169;
 }
 .footer__links {
-  width: 300px;
-  max-width: 100%;
+  max-width: 400px;
+  max-width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
 }
 .footer__links a {
   display: grid;

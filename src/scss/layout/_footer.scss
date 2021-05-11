@@ -8,9 +8,10 @@
   background-color: darken($bgColor, 10);
 
   &__links {
-    width: 300px;
-    max-width: 100%;
+    max-width: 400px;
+    max-width: 80%;
     @include flex(row, center, center);
+    gap: 3rem;
 
     a {
       @include grid(center);
