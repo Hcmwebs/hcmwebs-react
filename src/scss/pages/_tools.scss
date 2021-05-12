@@ -4,6 +4,7 @@
 .tools {
   @include grid(center);
   grid-template-columns: 1fr;
+  gap: 2rem;
 
   &__header {
     width: 80%;
