@@ -48,7 +48,7 @@ body {
 
 .container {
   max-width: 1440px;
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -175,14 +175,11 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: #1c8894;
 }
 .header .heroText {
   width: 100%;
-<<<<<<< Updated upstream
   max-width: 500px;
-=======
-  margin: 0 auto;
->>>>>>> Stashed changes
   padding: 3rem;
   border: none;
   border-radius: 0.4rem;
@@ -339,7 +336,7 @@ body {
 }
 .tools__header {
   width: 80%;
-  padding: 3rem 0;
+  margin-bottom: 2rem;
   display: grid;
   place-items: center;
 }
@@ -350,11 +347,6 @@ body {
   text-align: center;
 }
 .tools__body {
-<<<<<<< Updated upstream
-  padding: 3rem 0;
-=======
-  padding: 0 4rem;
->>>>>>> Stashed changes
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -370,11 +362,12 @@ body {
   gap: 10rem;
 }
 .main section {
-  min-height: 30vh;
+  width: 80%;
+  min-height: 60vh;
+  margin: 0 auto;
   padding: 3rem 0;
 }
 
-<<<<<<< Updated upstream
 .footer {
   width: 100%;
   padding: 3rem 0;
@@ -405,6 +398,4 @@ body {
   transform: scale(0.98);
 }
 
-=======
->>>>>>> Stashed changes
 /*# sourceMappingURL=styles.css.map */
