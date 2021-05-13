@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 const Nav = () => {
   const [isActive, setIsActive] = useState('');
   const [isOpen, setIsOpen] = useState('');
-  const toggle = () => {
+  const handleToggle = () => {
     if (!isOpen) {
       return setIsOpen(true);
     } else {
@@ -25,9 +25,9 @@ const Nav = () => {
         setIsActive={setIsActive}
       />
       <Hamburger
+        toggle={handleToggle}
         FaBars={FaBars}
         FaTimes={FaTimes}
-        toggle={toggle}
         isOpen={isOpen}
       />
     </nav>
