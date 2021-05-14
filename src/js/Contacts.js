@@ -6,13 +6,16 @@ import {
   FaEnvelopeSquare,
 } from 'react-icons/fa';
 
-const Contacts = ({ Github, Twitter, Email }) => {
+const Contacts = () => {
   return (
-    <IconContext.Provider value ={{size : '5rem'}}>
+    <IconContext.Provider
+      value={{ color: 'rgba(255, 255, 255, 1)', size: '5rem' }}>
       <div className='footer__links'>
-        <Contact Github={FaGithubSquare} />
-        <Contact Twitter={FaTwitterSquare} />
-        <Contact Email={FaEnvelopeSquare} />
+        <Contact
+          Github={FaGithubSquare}
+          Twitter={FaTwitterSquare}
+          Email={FaEnvelopeSquare}
+        />
       </div>
     </IconContext.Provider>
   );

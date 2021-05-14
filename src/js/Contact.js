@@ -4,10 +4,13 @@ const Contact = ({ Github, Twitter, Email }) => {
   return (
     <>
       <Link to='https://github.com/Hcmwebs' target='_blank' noreferrer>
-        {<Github />}
+        <Github />
       </Link>
       <Link to='https://twitter.com/hcmwebs' target='_blank' noreferrer>
-        {<Twitter />}
+        <Twitter />
+      </Link>
+      <Link to='/' target='_blank' noreferrer>
+        <Email />
       </Link>
     </>
   );
