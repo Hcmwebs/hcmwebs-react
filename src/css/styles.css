@@ -328,10 +328,11 @@ body {
 
 .tools {
   max-width: 600px;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
   background-color: white;
   border-radius: 0.4rem;
 }
@@ -344,6 +345,7 @@ body {
   text-align: center;
 }
 .tools__body {
+  padding: 0 2rem;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
