@@ -361,8 +361,7 @@ body {
 }
 .main section {
   min-height: 40vh;
-  margin: 5rem auto;
-  padding: 3rem 4rem;
+  margin: 10rem auto;
 }
 
 .footer {

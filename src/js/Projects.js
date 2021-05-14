@@ -13,7 +13,10 @@ const Projects = () => {
         <Project BsGrid3X2GapFill={BsGrid3X2GapFill} />
 
         <div className='projects__item'>
-          <Link to='https://webshop-ui-components.vercel.app/' target='_blank' noreferrer>
+          <Link
+            to='https://webshop-ui-components.vercel.app/'
+            target='_blank'
+            noreferrer>
             <span>
               <GiShoppingCart />
             </span>
@@ -24,7 +27,8 @@ const Projects = () => {
         <div className='projects__item'>
           <Link
             to='https://whackamole-5t4gkvwb2-hcmwebs.vercel.app/'
-            target='_blank' noreferrer>
+            target='_blank'
+            noreferrer>
             <span>
               <GiToyMallet />
             </span>
@@ -34,8 +38,8 @@ const Projects = () => {
         <div className='projects__item'>
           <Link
             href='https://faq-accordion-card-react.vercel.app/'
-            target='_blank' noreferrer
-            >
+            target='_blank'
+            noreferrer>
             <span>
               <RiQuestionAnswerFill />
             </span>
@@ -43,8 +47,10 @@ const Projects = () => {
           </Link>
         </div>
         <div className='projects__item'>
-          <Link to='https://weather-app-jpdbx25om.vercel.app' target='_blank' noreferrer
-          >
+          <Link
+            to='https://weather-app-jpdbx25om.vercel.app'
+            target='_blank'
+            noreferrer>
             <span>
               <TiWeatherPartlySunny />
             </span>
@@ -54,8 +60,8 @@ const Projects = () => {
         <div className='projects__item'>
           <Link
             to='https://coding-bootcamp-testimonials-dun.vercel.app/'
-            target='_blank' noreferrer
-            >
+            target='_blank'
+            noreferrer>
             <span>
               <BsChatQuoteFill />
             </span>
@@ -64,8 +70,10 @@ const Projects = () => {
         </div>
 
         <div className='projects__item'>
-          <Link to='https://www.waikatohispano.org.nz/' target='_blank' noreferrer
-          >
+          <Link
+            to='https://www.waikatohispano.org.nz/'
+            target='_blank'
+            noreferrer>
             <span>
               <FaGlobeAmericas />
             </span>
