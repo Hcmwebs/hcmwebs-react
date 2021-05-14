@@ -1,26 +1,10 @@
-import { IconContext } from 'react-icons';
-import {
-  FaGithubSquare,
-  FaTwitterSquare,
-  FaEnvelopeSquare,
-} from 'react-icons/fa';
 import Contacts from './Contacts';
 
 const Footer = () => {
   return (
-    <IconContext.Provider
-      value={{
-        color: ' rgba(255,255, 255, 1)',
-        size: '5rem',
-      }}>
-      <footer className=' footer'>
-        <Contacts
-          Github={FaGithubSquare}
-          Twitter={FaTwitterSquare}
-          Email={FaEnvelopeSquare}
-        />
-      </footer>
-    </IconContext.Provider>
+    <footer className=' footer'>
+      <Contacts />
+    </footer>
   );
 };
 

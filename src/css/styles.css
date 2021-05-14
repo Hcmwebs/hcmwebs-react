@@ -365,7 +365,7 @@ body {
 
 .footer {
   width: 100%;
-  min-height: 10vh;
+  min-height: 15vh;
   padding: 3rem 0;
   display: grid;
   place-items: center;
