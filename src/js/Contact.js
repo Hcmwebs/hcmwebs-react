@@ -9,9 +9,6 @@ const Contact = ({ Github, Twitter, Email }) => {
       <Link to='https://twitter.com/hcmwebs' target='_blank' noreferrer>
         {<Twitter />}
       </Link>
-      <Link to='mailto:zeekprojectos@gmail.com'>
-        {<Email />}
-      </Link>
     </>
   );
 };
