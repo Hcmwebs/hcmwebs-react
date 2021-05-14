@@ -9,7 +9,7 @@
   font-size: $fontSize;
 }
 body {
-  background-color: $secondaryTextColor;
+  background-color: $bgColor;
 }
 .container {
   max-width: 1440px;
@@ -17,5 +17,4 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   @include flex(column, space-between, center);
-  gap: 2rem;
 }
