@@ -43,7 +43,7 @@ button:hover {
 }
 
 body {
-  background-color: white;
+  background-color: #1c8894;
 }
 
 .container {
@@ -55,7 +55,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
 }
 
 .nav {
@@ -169,7 +168,7 @@ body {
 }
 .header {
   width: 100%;
-  min-height: 100vh;
+  min-height: 85vh;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -238,8 +237,6 @@ body {
 
 .about {
   width: 100%;
-  margin: 0 auto;
-  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -328,19 +325,18 @@ body {
 }
 
 .tools {
+  max-width: 600px;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
   gap: 2rem;
+  background-color: white;
+  border-radius: 0.4rem;
 }
 .tools__header {
-  width: 80%;
-  margin-bottom: 2rem;
-  display: grid;
-  place-items: center;
+  margin: 0 auto;
 }
 .tools__header h4 {
-  width: 70%;
   font-size: clamp(2.5rem, 3vw, 3.5rem);
   font-weight: 700;
   text-align: center;
@@ -353,6 +349,7 @@ body {
 
 .main {
   width: 100%;
+  min-height: 85vh;
   margin: 0 auto;
   padding: 3rem 0;
   display: grid;
@@ -361,14 +358,14 @@ body {
   gap: 10rem;
 }
 .main section {
-  width: 80%;
-  min-height: 30vh;
-  margin: 0 auto;
-  padding: 5rem 0;
+  min-height: 40vh;
+  margin: 5rem auto;
+  padding: 3rem 4rem;
 }
 
 .footer {
   width: 100%;
+  min-height: 10vh;
   padding: 3rem 0;
   display: grid;
   place-items: center;

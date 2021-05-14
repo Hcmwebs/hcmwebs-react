@@ -15,9 +15,9 @@ const Footer = () => {
       }}>
       <footer className=' footer'>
         <Contacts
-          FaGithubSquare={FaGithubSquare}
-          FaTwitterSquare={FaTwitterSquare}
-          FaEnvelopeSquare={FaEnvelopeSquare}
+          Github={FaGithubSquare}
+          Twitter={FaTwitterSquare}
+          Email={FaEnvelopeSquare}
         />
       </footer>
     </IconContext.Provider>

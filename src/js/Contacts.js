@@ -1,17 +1,11 @@
 import Contact from './Contact';
 
-const Contacts = ({ FaGithubSquare, FaTwitterSquare, FaEnvelopeSquare }) => {
+const Contacts = ({ Github, Twitter, Email }) => {
   return (
-    <div className = 'footer__links'>
-      <a href='https://'>
-        <FaGithubSquare />
-      </a>
-      <a href='https://'>
-        <FaTwitterSquare />
-      </a>
-      <a href='https://'>
-        <FaEnvelopeSquare />
-      </a>
+    <div className='footer__links'>
+      <Contact Github={Github} />
+      <Contact Twitter={Twitter} />
+      <Contact Email={Email} />
     </div>
   );
 };
