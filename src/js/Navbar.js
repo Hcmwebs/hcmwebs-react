@@ -8,16 +8,16 @@ const Navbar = ({ isOpen, isActive }) => {
         </Link>
       </li>
       <li>
-        <Link to='/about'>About</Link>
+        <Link to='/About'>About</Link>
       </li>
       <li>
-        <Link to='/projects'>Projects</Link>
+        <Link to='/Projects'>Projects</Link>
       </li>
       <li>
-        <Link to='/tools'>Tools</Link>
+        <Link to='/Tools'>Tools</Link>
       </li>
       <li>
-        <Link to='/contact'>Contact</Link>
+        <Link to='/Footer'>Contact</Link>
       </li>
     </ul>
   );
