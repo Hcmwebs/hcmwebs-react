@@ -2,17 +2,17 @@
 @use '../components/'as *;
 
 .tools {
+  max-width: 600px;
   @include grid(center);
   grid-template-columns: 1fr;
   gap: 2rem;
+  background-color: $secondaryTextColor;
+  border-radius: $borderRadius;
 
   &__header {
-    width: 80%;
-    margin-bottom: 2rem;
-    @include grid(center);
+    margin: 0 auto;
 
     h4 {
-      width: 70%;
       font-size: clamp(2.5rem, 3vw, 3.5rem);
       font-weight: 700;
       text-align: center;
