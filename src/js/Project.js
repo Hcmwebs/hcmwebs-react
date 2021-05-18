@@ -10,7 +10,7 @@ const Project = () => {
         <a
           href='https://social-proof-section-amber-eta.vercel.app/'
           target='_blank'
-          noreferrer>
+          rel='noreferrer'>
           <span>
             <BsGrid3X2GapFill />
           </span>
@@ -21,7 +21,7 @@ const Project = () => {
         <a
           href='https://webshop-ui-components.vercel.app/'
           target='_blank'
-          noreferrer>
+          rel='noreferrer'>
           <span>
             <GiShoppingCart />
           </span>
@@ -32,7 +32,7 @@ const Project = () => {
         <a
           href='https://whackamole-5t4gkvwb2-hcmwebs.vercel.app/'
           target='_blank'
-          noreferrer>
+          rel='noreferrer'>
           <span>
             <GiToyMallet />
           </span>
@@ -43,7 +43,7 @@ const Project = () => {
         <a
           href='https://faq-accordion-card-react.vercel.app/'
           target='_blank'
-          noreferrer>
+          rel='noreferrer'>
           <span>
             <RiQuestionAnswerFill />
           </span>
@@ -54,7 +54,7 @@ const Project = () => {
         <a
           href='https://weather-app-jpdbx25om.vercel.app'
           target='_blank'
-          noreferrer>
+          rel='noreferrer'>
           <span>
             <TiWeatherPartlySunny />
           </span>
@@ -65,16 +65,19 @@ const Project = () => {
         <a
           href='https://coding-bootcamp-testimonials-dun.vercel.app/'
           target='_blank'
-          noreferrer>
+          rel='noreferrer'>
           <span>
-            <BsChatQuoteFill/>
+            <BsChatQuoteFill />
           </span>
           Testimonials
         </a>
       </div>
 
       <div className='projects__item'>
-        <a href='https://www.waikatohispano.org.nz/' target='_blank' noreferrer>
+        <a
+          href='https://www.waikatohispano.org.nz/'
+          target='_blank'
+          rel='noreferrer'>
           <span>
             <FaGlobeAmericas />
           </span>
