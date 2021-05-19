@@ -2,7 +2,8 @@
 @use '../components/'as *;
 
 .tools {
-  max-width: 600px;
+  width: 100%;
+  max-width: 800px;
   @include flex(column, center, center);
   gap: 3rem;
   background-color: $secondaryTextColor;

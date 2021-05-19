@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Tool = ({ TiHtml5, TiCss3, SiJavascript, SiReact }) => {
+const Tool = ({ TiHtml5, TiCss3, SiJavascript, SiReact, Sass }) => {
   return (
     <div className='tool'>
       <span>
@@ -14,6 +12,9 @@ const Tool = ({ TiHtml5, TiCss3, SiJavascript, SiReact }) => {
       </span>
       <span>
         <SiReact />
+      </span>
+      <span>
+        <Sass />
       </span>
     </div>
   );

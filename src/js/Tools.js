@@ -1,6 +1,7 @@
 import { IconContext } from 'react-icons';
 import { TiHtml5, TiCss3 } from 'react-icons/ti';
 import { SiJavascript, SiReact } from 'react-icons/si';
+import { FaSass } from 'react-icons/fa';
 import Tool from './Tool';
 
 const Tools = tool => {
@@ -22,6 +23,7 @@ const Tools = tool => {
               TiCss3={TiCss3}
               SiJavascript={SiJavascript}
               SiReact={SiReact}
+              Sass={FaSass}
             />
           </div>
         </section>

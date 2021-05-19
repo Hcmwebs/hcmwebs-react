@@ -228,6 +228,7 @@ body {
   gap: 2rem;
 }
 .tool span {
+  padding: 0.5rem;
   display: grid;
   place-items: center;
   border: 1px solid #e04e3e;
@@ -329,7 +330,8 @@ body {
 }
 
 .tools {
-  max-width: 600px;
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
