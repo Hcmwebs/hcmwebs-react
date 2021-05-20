@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const Navbar = ({ isOpen, toggle }) => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState('');
   const handleActive = () => {
     if (!isActive) {
       return setIsActive(false);
