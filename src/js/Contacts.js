@@ -9,7 +9,8 @@ import {
 const Contacts = () => {
   return (
     <IconContext.Provider
-      value={{ color: 'rgba(255, 255, 255, 1)', size: '5rem' }}>
+      value={{ color: 'rgba(255, 255, 255, 1)', size: '5rem', boxShadow: '0px 10px 15px 2px rgba(0, 0, 0, 0.2)'
+  }}>
       <div className='footer__links'>
         <Contact
           Github={FaGithubSquare}

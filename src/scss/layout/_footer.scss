@@ -22,7 +22,7 @@
 
       &:hover {
         color: $secondaryColor;
-        background-color: darken($bgColor, 10);
+        background-color: darken($bgColor, 5);
         box-shadow: $boxShadowHover;
         transform: scale(0.95);
       }
