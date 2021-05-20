@@ -3,6 +3,7 @@
 
 .tools {
   width: 80%;
+  padding: 3rem 0;
   @include flex(column, center, center);
   gap: 3rem;
   background-color: $secondaryTextColor;

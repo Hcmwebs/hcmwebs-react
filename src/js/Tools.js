@@ -1,6 +1,8 @@
 import { IconContext } from 'react-icons';
 import { TiHtml5, TiCss3 } from 'react-icons/ti';
-import { SiJavascript, SiReact, SiSass } from 'react-icons/si';
+import { SiJavascript, SiReact } from 'react-icons/si';
+import { IoLogoSass } from 'react-icons/io';
+
 import Tool from './Tool';
 
 const Tools = tool => {
@@ -22,7 +24,7 @@ const Tools = tool => {
               TiCss3={TiCss3}
               SiJavascript={SiJavascript}
               SiReact={SiReact}
-              Sass={SiSass}
+              Sass={IoLogoSass}
             />
           </div>
         </section>
