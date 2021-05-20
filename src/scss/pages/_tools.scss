@@ -2,12 +2,12 @@
 @use '../components/'as *;
 
 .tools {
-  width: 100%;
-  max-width: 800px;
+  width: 80%;
   @include flex(column, center, center);
   gap: 3rem;
   background-color: $secondaryTextColor;
   border-radius: $borderRadius;
+  box-shadow: $boxShadow;
 
   &__header {
     margin: 0 auto;
