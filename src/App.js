@@ -7,6 +7,7 @@ import Projects from './js/Projects';
 import Tools from './js/Tools';
 import Footer from './js/Footer';
 const App = () => {
+
   return (
     <Router>
       <IconContext.Provider
@@ -15,7 +16,7 @@ const App = () => {
           size: '3rem',
         }}>
         <div className='container'>
-          <Nav />
+          <Nav/>
           <Switch>
             <Route exact path='/'>
               <Header />

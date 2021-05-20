@@ -5,7 +5,6 @@ import Logo from './Logo';
 import Navbar from './Navbar';
 
 const Nav = () => {
-  const [isActive, setIsActive] = useState('');
   const [isOpen, setIsOpen] = useState('');
   const handleToggle = () => {
     if (!isOpen) {
@@ -15,17 +14,15 @@ const Nav = () => {
     }
   };
 
+  const handleClick = () => {
+    handleToggle();
+  };
   return (
     <nav className='nav'>
       <Logo />
-      <Navbar
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        isActive={isActive}
-        setIsActive={setIsActive}
-      />
+      <Navbar isOpen={isOpen} toggle={handleToggle} />
       <Hamburger
-        toggle={handleToggle}
+        handleClick={handleClick}
         FaBars={FaBars}
         FaTimes={FaTimes}
         isOpen={isOpen}
