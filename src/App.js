@@ -33,6 +33,9 @@ const App = () => {
             <Route exact path='/Contact'>
               <Contact />
             </Route>
+            <Route exact path='/Results'>
+              <Contact />
+            </Route>
           </Switch>
           <Footer />
         </div>

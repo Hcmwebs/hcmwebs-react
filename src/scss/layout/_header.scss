@@ -2,10 +2,10 @@
 
 .header {
   width: 100%;
-  min-height: 85vh;
+  min-height: 100vh;
   margin: 0 auto;
   @include flex(row, center, center);
-  background-color: $bgColor;
+  background-color: $secondaryTextColor;
 
   .heroText {
     width: 100%;
@@ -14,8 +14,8 @@
     border: none;
     border-radius: $borderRadius;
     @include flex(column, space-between, center);
-    color: $secondaryTextColor;
-    background-color: darken($bgColor, 10);
+    color: $primaryTextColor;
+    background-color: $secondaryTextColor;
 
     h1 {
       font-size: clamp(3rem, 10vw, 5rem);

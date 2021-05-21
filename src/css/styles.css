@@ -43,7 +43,7 @@ button:hover {
 }
 
 body {
-  background-color: #1c8894;
+  background-color: secondaryTextColor;
 }
 
 .container {
@@ -59,7 +59,7 @@ body {
 
 .nav {
   width: 100%;
-  height: 8.7rem;
+  height: 15vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -172,13 +172,13 @@ body {
 }
 .header {
   width: 100%;
-  min-height: 85vh;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #1c8894;
+  background-color: white;
 }
 .header .heroText {
   width: 100%;
@@ -190,8 +190,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  background-color: #146169;
+  color: #0b1614;
+  background-color: white;
 }
 .header .heroText h1 {
   font-size: clamp(3rem, 10vw, 5rem);
@@ -363,9 +363,68 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.contact {
+  width: 80%;
+}
+.contact .form {
+  width: 100%;
+  max-width: 400px;
+  padding: 3rem 4rem;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  border-radius: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: 0.8rem;
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
+}
+.contact .form .formGroup {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+.contact .form .formGroup label {
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #0b1614;
+}
+.contact .form .formGroup input {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: 1px solid #0b1614;
+  border-radius: 0.4rem;
+  outline: none;
+}
+.contact .form .formGroup textarea {
+  width: 100%;
+  min-height: 10rem;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  border: 1px solid #0b1614;
+  outline: none;
+  padding: 1rem;
+}
+.contact .form .btn {
+  width: 100%;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #e04e3e;
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+.contact .form .btn:hover {
+  background-color: #1c8894;
+}
+.contact .form .btn:hover:focus {
+  background-color: #146169;
+}
+
 .main {
   width: 100%;
-  min-height: 85vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 3rem 0;
   display: grid;
@@ -376,12 +435,16 @@ body {
 .main section {
   min-height: 40vh;
   margin: 10rem auto;
+  display: grid;
+  place-items: center;
 }
 
 .footer {
   width: 100%;
   min-height: 15vh;
   padding: 3rem 0;
+  position: fixed;
+  bottom: 0;
   display: grid;
   place-items: center;
   background-color: #1c8894;

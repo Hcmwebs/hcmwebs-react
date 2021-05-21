@@ -5,8 +5,11 @@
   width: 100%;
   min-height: 15vh;
   padding: 3rem 0;
+  position:fixed;
+  bottom: 0;
   @include grid(center);
   background-color: $bgColor;
+
 
   &__links {
     width: 80%;

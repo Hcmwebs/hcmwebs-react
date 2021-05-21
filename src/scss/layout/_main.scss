@@ -3,7 +3,7 @@
 
 .main {
   width: 100%;
-  min-height: 85vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 3rem 0;
   @include grid(center);
@@ -13,5 +13,7 @@
   section {
     min-height: 40vh;
     margin: 10rem auto;
+    @include grid(center);
+
   }
 }
