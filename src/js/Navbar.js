@@ -48,7 +48,7 @@ const Navbar = ({ isOpen, toggle }) => {
       </li>
       <li>
         <Link
-          to='/Footer'
+          to='/Contact'
           className={isActive ? 'active' : ''}
           onClick={handleClick}>
           Contact
