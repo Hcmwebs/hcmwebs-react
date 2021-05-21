@@ -369,23 +369,25 @@ body {
 }
 
 .contact {
-  width: 100%;
+  width: 80%;
   max-width: 400px;
+  display: grid;
+  place-items: center;
 }
 .contact .form {
   width: 100%;
   max-width: 400px;
-  padding: 3rem 4rem;
+  padding: 3rem;
   display: grid;
   place-items: center;
   gap: 1rem;
   border-radius: 0.4rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: 0.8rem;
+  background-color: #1c8894;
   box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
 }
 .contact .form .formGroup {
   width: 100%;
+  padding-bottom: 2rem;
   display: grid;
   place-items: center;
   gap: 0.5rem;
@@ -394,13 +396,13 @@ body {
   width: 100%;
   font-size: 1.6rem;
   text-align: left;
-  color: #0b1614;
+  color: white;
 }
 .contact .form .formGroup input {
   width: 100%;
   font-size: 1.3rem;
   padding: 1rem;
-  border: 1px solid #0b1614;
+  border: none;
   border-radius: 0.4rem;
   outline: none;
 }
@@ -409,23 +411,28 @@ body {
   min-height: 10rem;
   font-size: 1.3rem;
   border-radius: 0.4rem;
-  border: 1px solid #0b1614;
+  border: none;
   outline: none;
   padding: 1rem;
 }
+.contact .form .formGroup small {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  visibility: hidden;
+}
 .contact .form .btn {
   width: 100%;
+  margin: 0;
   border: none;
   border-radius: 0.4rem;
   background-color: #e04e3e;
   color: white;
   transition: all 0.6s ease-in-out;
 }
-.contact .form .btn:hover {
-  background-color: #1c8894;
-}
-.contact .form .btn:hover:focus {
-  background-color: #146169;
+.contact .form .btn:focus {
+  background-color: black;
 }
 
 .main {
