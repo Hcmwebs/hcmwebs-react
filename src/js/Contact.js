@@ -1,16 +1,12 @@
-const Contact = ({ Github, Twitter, Email }) => {
+import Form from './Form';
+
+const Contact = () => {
   return (
-    <>
-      <a href='https://github.com/Hcmwebs' target='_blank' rel='noreferrer'>
-        <Github />
-      </a>
-      <a href='https://twitter.com/hcmwebs' target='_blank' rel='noreferrer'>
-        <Twitter />
-      </a>
-      <a href='/' target='_blank' rel='noreferrer'>
-        <Email />
-      </a>
-    </>
+    <main className='main'>
+      <section className='contact'>
+        <Form />
+      </section>
+    </main>
   );
 };
 
