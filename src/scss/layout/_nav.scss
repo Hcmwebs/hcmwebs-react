@@ -40,6 +40,8 @@
 
     &.open {
       right: 0%;
+      filter: opacity(0.9);
+      backdrop-filter: blur(0.8rem);
     }
 
     li {
@@ -91,13 +93,15 @@
     font-weight: 300;
     display: block;
     position: absolute;
-    top: 2rem;
+    top: 50%;
     right: 4rem;
+    transform: translateY(-50%);
     z-index: 9;
     transition: all 0.6s ease-in-out;
 
     &.open {
-      transform: rotate(180deg);
+      top: 25%;
+      transform: rotate(180deg) translateY(-50%);
     }
   }
 }
