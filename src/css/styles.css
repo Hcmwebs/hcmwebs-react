@@ -25,13 +25,13 @@ button {
   margin: 3rem auto;
   padding: 1.2rem 3rem;
   outline: none;
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.6s ease-in-out;
 }
 button:hover {
   transform: scale(0.98);
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -241,7 +241,9 @@ body {
   height: 8rem;
   padding: 0.2rem;
   object-fit: cover;
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e04e3e;
+  border-radius: 0.4rem;
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
   display: grid;
   place-items: center;
   transition: all 0.6s ease-in-out;
@@ -256,7 +258,7 @@ body {
   padding: 3rem 0;
   gap: 2rem;
   background-color: white;
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0.4rem;
 }
 .about__header {
@@ -317,14 +319,14 @@ body {
   display: grid;
   place-items: center;
   border-radius: 0.4rem;
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
   gap: 2rem;
   cursor: pointer;
   background-color: #1c8894;
   transition: all 0.6s ease-in-out;
 }
 .projects__item:hover {
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
   transform: scale(0.95);
 }
 .projects__item a {
@@ -345,18 +347,18 @@ body {
 
 .tools {
   width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  background-color: white;
-  border-radius: 0.4rem;
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
 }
 .tools__header {
   margin: 0 auto;
+  padding: 0 3rem;
 }
 .tools__header h4 {
   font-size: clamp(2.5rem, 3vw, 3.5rem);
@@ -364,7 +366,7 @@ body {
   text-align: center;
 }
 .tools__body {
-  padding: 0 2rem;
+  padding: 2rem;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -385,7 +387,7 @@ body {
   gap: 1rem;
   border-radius: 0.4rem;
   background-color: #1c8894;
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
 }
 .contact .form .formGroup {
   width: 100%;
@@ -480,7 +482,7 @@ body {
 .footer__links a:hover {
   color: #e04e3e;
   background-color: #18747f;
-  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
   transform: scale(0.95);
 }
 
