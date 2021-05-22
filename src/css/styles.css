@@ -455,7 +455,7 @@ body {
 
 .footer {
   width: 100%;
-  min-height: 15vh;
+  min-height: 2vh;
   padding: 3rem 0;
   position: fixed;
   bottom: 0;

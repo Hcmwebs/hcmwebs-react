@@ -3,13 +3,12 @@
 
 .footer {
   width: 100%;
-  min-height: 15vh;
+  min-height: 2vh;
   padding: 3rem 0;
-  position:fixed;
+  position: fixed;
   bottom: 0;
   @include grid(center);
   background-color: $bgColor;
-
 
   &__links {
     width: 80%;
