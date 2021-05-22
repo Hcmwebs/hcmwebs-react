@@ -22,7 +22,11 @@ const Nav = () => {
       <Logo />
       <Navbar isOpen={isOpen} toggle={handleToggle} />
       <Hamburger
+<<<<<<< Updated upstream
         handleClick={handleClick}
+=======
+        toggle={handleToggle}
+>>>>>>> Stashed changes
         FaBars={FaBars}
         FaTimes={FaTimes}
         isOpen={isOpen}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+<<<<<<< Updated upstream
 import { useState } from 'react';
 
 const Navbar = ({ isOpen, toggle }) => {
@@ -19,10 +20,18 @@ const Navbar = ({ isOpen, toggle }) => {
     <ul className={(isOpen ? 'open' : '') + ' navBar'}>
       <li>
         <Link to='/' className={isActive ? 'active' : ''} onClick={handleClick}>
+=======
+const Navbar = ({ isOpen, isActive }) => {
+  return (
+    <ul className={(isOpen ? 'open' : '') + ' navBar'}>
+      <li>
+        <Link to='/' className='active'>
+>>>>>>> Stashed changes
           Home
         </Link>
       </li>
       <li>
+<<<<<<< Updated upstream
         <Link
           to='/About'
           className={isActive ? 'active' : ''}
@@ -53,6 +62,18 @@ const Navbar = ({ isOpen, toggle }) => {
           onClick={handleClick}>
           Contact
         </Link>
+=======
+        <Link to='/About'>About</Link>
+      </li>
+      <li>
+        <Link to='/Projects'>Projects</Link>
+      </li>
+      <li>
+        <Link to='/Tools'>Tools</Link>
+      </li>
+      <li>
+        <Link to='/Footer'>Contact</Link>
+>>>>>>> Stashed changes
       </li>
     </ul>
   );
