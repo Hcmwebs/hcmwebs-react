@@ -20,7 +20,7 @@ const Form = () => {
   };
 
   return (
-    <>
+    <div>
       <form className='form' onSubmit={handleSubmit} action='' method='post'>
         <div className='formGroup'>
           <label htmlFor='fullname'>FullName:</label>
@@ -56,7 +56,7 @@ const Form = () => {
           Send
         </button>
       </form>
-    </>
+    </div>
   );
 };
 

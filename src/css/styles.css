@@ -43,11 +43,7 @@ button:hover {
 }
 
 body {
-<<<<<<< Updated upstream
   background-color: secondaryTextColor;
-=======
-  background-color: #1c8894;
->>>>>>> Stashed changes
 }
 
 .container {
@@ -248,21 +244,11 @@ body {
   box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
   display: grid;
   place-items: center;
-<<<<<<< Updated upstream
   transition: all 0.6s ease-in-out;
 }
 
 .about {
   width: 80%;
-=======
-  border: 1px solid #e04e3e;
-  border-radius: 0.4rem;
-  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
-}
-
-.about {
-  width: 100%;
->>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -336,11 +322,7 @@ body {
   transition: all 0.6s ease-in-out;
 }
 .projects__item:hover {
-<<<<<<< Updated upstream
   box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.4);
-=======
-  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.4);
->>>>>>> Stashed changes
   transform: scale(0.95);
 }
 .projects__item a {
@@ -360,12 +342,8 @@ body {
 }
 
 .tools {
-<<<<<<< Updated upstream
   width: 80%;
   padding: 3rem 0;
-=======
-  max-width: 600px;
->>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -373,10 +351,7 @@ body {
   gap: 3rem;
   background-color: white;
   border-radius: 0.4rem;
-<<<<<<< Updated upstream
   box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
-=======
->>>>>>> Stashed changes
 }
 .tools__header {
   margin: 0 auto;
@@ -462,11 +437,7 @@ body {
 
 .main {
   width: 100%;
-<<<<<<< Updated upstream
   min-height: 100vh;
-=======
-  min-height: 85vh;
->>>>>>> Stashed changes
   margin: 0 auto;
   padding: 3rem 0;
   display: grid;
@@ -476,10 +447,6 @@ body {
 }
 .main section {
   min-height: 40vh;
-<<<<<<< Updated upstream
-=======
-  margin: 10rem auto;
->>>>>>> Stashed changes
 }
 
 .footer {
@@ -510,13 +477,8 @@ body {
 }
 .footer__links a:hover {
   color: #e04e3e;
-<<<<<<< Updated upstream
   background-color: #18747f;
   box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.4);
-=======
-  background-color: #146169;
-  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.4);
->>>>>>> Stashed changes
   transform: scale(0.95);
 }
 

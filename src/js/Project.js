@@ -5,7 +5,7 @@ import { RiQuestionAnswerFill } from 'react-icons/ri';
 import { FaGlobeAmericas } from 'react-icons/fa';
 const Project = () => {
   return (
-    <>
+    <div>
       <div className='projects__item'>
         <a
           href='https://social-proof-section-amber-eta.vercel.app/'
@@ -84,7 +84,7 @@ const Project = () => {
           Waikato Hispano Latino
         </a>
       </div>
-    </>
+    </div>
   );
 };
 
