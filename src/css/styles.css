@@ -395,6 +395,7 @@ body {
   display: grid;
   place-items: center;
   gap: 0.5rem;
+  transition: all 0.6s ease-in-out;
 }
 .contact .form .formGroup label {
   width: 100%;
@@ -421,10 +422,32 @@ body {
 }
 .contact .form .formGroup small {
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-align: left;
+  color: #892116;
   visibility: hidden;
+}
+.contact .form .formGroup.success input {
+  border: 1px solid #146169;
+}
+.contact .form .formGroup.success textarea {
+  border: 1px solid #146169;
+}
+.contact .form .formGroup.success .btn:focus {
+  background-color: #146169;
+}
+.contact .form .formGroup.error input {
+  border: 1px solid #892116;
+}
+.contact .form .formGroup.error textarea {
+  border: 1px solid #892116;
+}
+.contact .form .formGroup.error small {
+  visibility: visible;
+}
+.contact .form .formGroup.error .btn:focus {
+  background-color: #892116;
 }
 .contact .form .btn {
   width: 100%;
@@ -436,7 +459,22 @@ body {
   transition: all 0.6s ease-in-out;
 }
 .contact .form .btn:focus {
-  background-color: black;
+  background-color: #ca3121;
+}
+.contact .successMessage {
+  width: 80%;
+  max-width: 400px;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+  border-radius: 0.4rem;
+  background-color: #1c8894;
+  color: white;
+}
+.contact .successMessage p {
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  text-align: center;
 }
 
 .main {
