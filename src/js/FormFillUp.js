@@ -22,7 +22,7 @@ const FormFillUp = ({ submitForm }) => {
           />
           {errors.fullname && <small>{errors.fullname}</small>}
         </div>
-        <div className='formGroup'>
+        <div className={(isSubmitting ? 'success' : 'error') + ' formGroup'}>
           <label htmlFor='email'>Email:</label>
           <input
             id='email'
@@ -34,7 +34,7 @@ const FormFillUp = ({ submitForm }) => {
           />
           {errors.email && <small>{errors.email}</small>}
         </div>
-        <div className='formGroup'>
+        <div className={(isSubmitting ? 'success' : 'error') + ' formGroup'}>
           <label htmlFor='comments'> Comments: </label>
           <textarea
             id='comments'
