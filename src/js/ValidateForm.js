@@ -2,7 +2,7 @@ export default function validate(values) {
   let errors = {};
 
   //Fullname
-  if (!values.fullname) {
+  if (!values.fullname.trim()) {
     errors.fullname = 'Fullname required';
   }
 
@@ -14,7 +14,7 @@ export default function validate(values) {
   }
 
   //comments
-  if (!values.comments.trim()) {
+  if (!values.comments) {
     errors.comments = 'Comments required';
   }
 

@@ -407,7 +407,7 @@ body {
   width: 100%;
   font-size: 1.3rem;
   padding: 1rem;
-  border: none;
+  border: 2px solid white;
   border-radius: 0.4rem;
   outline: none;
 }
@@ -416,7 +416,7 @@ body {
   min-height: 10rem;
   font-size: 1.3rem;
   border-radius: 0.4rem;
-  border: 1px solid white;
+  border: 2px solid white;
   outline: none;
   padding: 1rem;
 }
@@ -426,26 +426,27 @@ body {
   font-weight: 700;
   text-align: left;
   color: #892116;
+  visibility: hidden;
 }
-.contact .form .formGroup .success input {
-  border: 1px solid #146169;
-}
-.contact .form .formGroup .success textarea {
+.contact .form .formGroup.success input {
   border-color: #146169;
 }
-.contact .form .formGroup .success .btn:focus {
+.contact .form .formGroup.success textarea {
+  border-color: #146169;
+}
+.contact .form .formGroup.success .btn:focus {
   background-color: #146169;
 }
-.contact .form .formGroup .error input {
+.contact .form .formGroup.error input {
   border: 1px solid #892116;
 }
-.contact .form .formGroup .error textarea {
+.contact .form .formGroup.error textarea {
   border-color: #892116;
 }
-.contact .form .formGroup .error small {
+.contact .form .formGroup.error small {
   visibility: visible;
 }
-.contact .form .formGroup .error .btn:focus {
+.contact .form .formGroup.error .btn:focus {
   background-color: #892116;
 }
 .contact .form .btn {

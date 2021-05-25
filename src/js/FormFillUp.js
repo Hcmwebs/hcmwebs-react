@@ -10,7 +10,7 @@ const FormFillUp = ({ submitForm }) => {
   return (
     <>
       <form className='form' action='' method='post' onSubmit={handleSubmit}>
-        <div className={(isSubmitting ? 'success' : 'error') + ' formGroup'}>
+        <div className={isSubmitting ? 'formGroup success' : 'formGroup error'}>
           <label htmlFor='fullname'>FullName:</label>
           <input
             id='fullname'

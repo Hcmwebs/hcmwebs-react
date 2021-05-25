@@ -31,7 +31,7 @@
         width: 100%;
         font-size: 1.3rem;
         padding: 1rem;
-        border: none;
+        border: 2px solid rgba(255, 255, 255, 1);
         border-radius: $borderRadius;
         outline: none;
       }
@@ -40,7 +40,7 @@
         min-height: 10rem;
         font-size: 1.3rem;
         border-radius: $borderRadius;
-        border: 1px solid rgba(255, 255, 255, 1);
+        border: 2px solid rgba(255, 255, 255, 1);
         outline: none;
         padding: 1rem;
       }
@@ -50,11 +50,12 @@
         font-weight: 700;
         text-align: left;
         color: darken($secondaryColor, 25);
+        visibility: hidden;
       }
 
-      & .success {
+      &.success {
         input {
-          border: 1px solid darken($bgColor, 10);
+          border-color:darken($bgColor, 10);
         }
         textarea {
           border-color: darken($bgColor, 10);
@@ -64,7 +65,7 @@
           background-color: darken($bgColor, 10);
         }
       }
-      & .error {
+      &.error {
         input {
           border: 1px solid darken($secondaryColor, 25);
         }
