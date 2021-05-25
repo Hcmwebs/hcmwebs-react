@@ -1,16 +1,34 @@
 import { useState } from 'react';
-import FormFillUp from './FormFillUp';
+import FormSignUp from './FormSignUp';
 import FormSuccess from './FormSuccess';
 
 const Form = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const submitForm = () => {
-    setIsSubmitted(true);
+
+  const [user, setUser] = useState({
+    fullname: '',
+    email: '',
+    comments: '',
+  });
+  const signUp = details => {
+    console.log(details);
   };
+
+  const signOut = () => {
+    console.log('thank you for being in touch');
+  };
+
+  // const [isSubmitted, setIsSubmitted] = useState(false);
+  // const submitForm = () => {
+  //   setIsSubmitted(true);
+  // };
 
   return (
     <>
-      {!isSubmitted ? <FormFillUp submitForm={submitForm} /> : <FormSuccess />}
+    {(user.email !== '') ?
+    <FormSuccess /> : <FormSignUp signUp= {signUp} error={error} />}
+
+    {/* {!isSubmitted ? <FormFillUp submitForm={submitForm} /> : <FormSuccess />} */}
+
     </>
   );
 };
