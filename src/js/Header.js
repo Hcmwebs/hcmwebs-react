@@ -5,17 +5,16 @@ const Header = () => {
     <>
       {Data.map((item, key) => {
         return (
-        <header className='header'>
-          <div className='heroText'>
-            <h1>{item.title} <span data>{item.name}</span></h1>
-            <p>I build great and awesome websites </p>
-            <p>
-              UI/UX Designer <span> & </span> Developer{' '}
-            </p>
-            <p>{}</p>
-          </div>
-        </header>
-      )})}
+          <header className='header'>
+            <div className='heroText'>
+              <h1 key={1}>
+                {item.title} <span key={item.id}>{item.name}</span>
+              </h1>
+              <p>I build great and awesome websites</p>
+              <p>Your next best friend!</p>
+            </div>
+          </header>
+        );})}
     </>
   );
 };
