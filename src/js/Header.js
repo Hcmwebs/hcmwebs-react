@@ -1,18 +1,22 @@
+import { Data} from './Data';
 const Header = () => {
+
   return (
-    <header className='header'>
-      <div className='heroText'>
-        <h1>
-          Hi, I am <span>Heze</span>
-        </h1>
-        <p>I build great and awesome websites </p>
-        <p>
-          {' '}
-          UI/UX Designer <span> & </span> Developer{' '}
-        </p>
-        <p>Your next best friend!</p>
-      </div>
-    </header>
+    <>
+      {Data.map((item, key) => {
+        return (
+        <header className='header'>
+          <div className='heroText'>
+            <h1>{item.title} <span data>{item.name}</span></h1>
+            <p>I build great and awesome websites </p>
+            <p>
+              UI/UX Designer <span> & </span> Developer{' '}
+            </p>
+            <p>{}</p>
+          </div>
+        </header>
+      )})}
+    </>
   );
 };
 
