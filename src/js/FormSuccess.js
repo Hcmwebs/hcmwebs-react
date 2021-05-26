@@ -4,7 +4,9 @@ const FormSuccess = () => {
   return (
     <div className='successMessage'>
       <p>Thank you for contacting us. Someone will be in touch with soon.</p>
-      <Link to='/'>Home</Link>
+      <Link to='/' className='btn'>
+        Home
+      </Link>
     </div>
   );
 };

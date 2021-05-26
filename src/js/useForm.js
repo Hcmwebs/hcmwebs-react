@@ -7,7 +7,7 @@ const useForm = (callback, validate) => {
     comments: '',
   });
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -29,7 +29,7 @@ const useForm = (callback, validate) => {
     }
   }, [errors, callback, isSubmitting]);
 
-  return { handleChange, values, handleSubmit, errors, isSubmitting };
+  return { handleChange, values, handleSubmit, errors };
 };
 
 export default useForm;
