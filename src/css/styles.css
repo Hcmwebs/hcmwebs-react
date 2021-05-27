@@ -183,7 +183,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #1c8894;
+  background-color: white;
 }
 .header .heroText {
   width: 100%;
@@ -195,30 +195,27 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: #0b1614;
-  background-color: white;
+  color: white;
+  background-color: #1c8894;
 }
 .header .heroText h1 {
-  font-size: clamp(3rem, 3.9rem, 5rem);
+  font-size: 6rem;
   font-weight: 300;
   margin: 0 auto;
   text-align: center;
 }
 .header .heroText span {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 400;
+  padding: 0 2rem;
   color: #e04e3e;
+  background-color: #146169;
 }
-.header .heroText p {
-  font-size: 2rem;
+.header .heroText h2 {
+  font-size: 3.5rem;
   font-weight: 300;
   padding: 1rem 0;
   text-align: center;
-}
-.header .heroText p span {
-  font-size: 2rem;
-  font-weight: 400;
-  padding: 0 1rem;
 }
 
 .btn__primary {

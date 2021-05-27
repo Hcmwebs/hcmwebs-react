@@ -5,7 +5,7 @@
   min-height: 100vh;
   margin: 0 auto;
   @include flex(row, center, center);
-  background-color: $bgColor;
+  background-color: $secondaryTextColor;
 
   .heroText {
     width: 100%;
@@ -14,31 +14,28 @@
     border: none;
     border-radius: $borderRadius;
     @include flex(column, space-between, center);
-    color: $primaryTextColor;
-    background-color: $secondaryTextColor;
+    color: $secondaryTextColor;
+    background-color: $bgColor;
 
     h1 {
-      font-size: clamp(3rem, 3.9rem, 5rem);
+      font-size: 6rem;
       font-weight: 300;
       margin: 0 auto;
       text-align: center;
     }
     span {
-      font-size: 6rem;
+      font-size: 7rem;
       font-weight: 400;
+      padding: 0 2rem;
       color: $secondaryColor;
+      background-color:darken($bgColor,10);
     }
-    p {
-      font-size: 2rem;
+
+    h2 {
+      font-size: 3.5rem;
       font-weight: 300;
       padding: 1rem 0;
       text-align: center;
-
-      span {
-        font-size: 2rem;
-        font-weight: 400;
-        padding: 0 1rem;
-      }
     }
   }
 }
