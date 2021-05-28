@@ -313,19 +313,19 @@ body {
   }
 }
 .projects {
-  width: 100%;
-  max-width: 80%;
+  width: 90%;
   margin: 6rem auto;
   padding: 3rem 0;
   display: grid;
   place-items: center;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
   border-radius: 0.4rem;
 }
 .projects__item {
-  width: 80%;
+  width: 90%;
   height: 15rem;
+  margin: 2rem auto;
   padding: 2rem 0;
   display: grid;
   place-items: center;
@@ -336,9 +336,10 @@ body {
   background-color: #1c8894;
   transition: all 0.6s ease-in-out;
 }
-.projects__item:hover {
+.projects__item:hover, .projects__item:focus {
   box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
-  transform: scale(0.95);
+  transform: scale(1.1);
+  background-color: #146169;
 }
 .projects__item a {
   width: 100%;
