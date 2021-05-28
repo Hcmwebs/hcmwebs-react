@@ -69,6 +69,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 9;
 }
 .nav .logo {
   width: 150px;
@@ -79,7 +80,6 @@ body {
   transform: translateY(-50%);
   display: grid;
   place-items: center;
-  z-index: 9;
 }
 .nav .logo img {
   width: 100%;
@@ -151,7 +151,6 @@ body {
   top: 50%;
   right: 4rem;
   transform: translateY(-50%);
-  z-index: 9;
   transition: all 0.6s ease-in-out;
 }
 .nav .hamburger.open {
