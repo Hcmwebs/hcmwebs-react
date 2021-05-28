@@ -18,27 +18,39 @@ const Navbar = ({ isOpen, toggle }) => {
   return (
     <ul className={(isOpen ? 'open' : '') + ' navBar'}>
       <li>
-        <Link to='/' onClick={handleClick}>
+        <Link to='/' className={isActive ? 'active' : ''} onClick={handleClick}>
           Home
         </Link>
       </li>
       <li>
-        <Link to='/About' onClick={handleClick}>
+        <Link
+          to='/About'
+          className={isActive ? 'active' : ''}
+          onClick={handleClick}>
           About
         </Link>
       </li>
       <li>
-        <Link to='/Projects' onClick={handleClick}>
+        <Link
+          to='/Projects'
+          className={isActive ? 'active' : ''}
+          onClick={handleClick}>
           Projects
         </Link>
       </li>
       <li>
-        <Link to='/Tools' onClick={handleClick}>
+        <Link
+          to='/Tools'
+          className={isActive ? 'active' : ''}
+          onClick={handleClick}>
           Tools
         </Link>
       </li>
       <li>
-        <Link to='/Contact' onClick={handleClick}>
+        <Link
+          to='/Contact'
+          className={isActive ? 'active' : ''}
+          onClick={handleClick}>
           Contact
         </Link>
       </li>
