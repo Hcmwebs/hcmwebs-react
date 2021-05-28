@@ -4,6 +4,7 @@
 .about {
   width: 90%;
   @include flex(column, center, center);
+  margin: 6rem auto;
   padding: 3rem 0;
   gap: 2rem;
   background-color: $secondaryTextColor;
@@ -12,6 +13,7 @@
   &__header {
     width: 100%;
     max-width: 300px;
+    // margin-top: 2rem;
     @include grid(center);
 
     img {
@@ -25,6 +27,7 @@
   &__body {
     width: 100%;
     max-width: 400px;
+    // margin-bottom: 2rem;
     padding: 0 3rem;
     @include grid(center);
     gap: 2rem;
