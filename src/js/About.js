@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const About = () => {
   const profileImage =
     'https://res.cloudinary.com/duymkqhnm/image/upload/v1608460164/hcmwebs/hcmwebs/profiles/personal/IMG_3327_l9pp8q.jpg';
@@ -9,10 +10,13 @@ const About = () => {
         </div>
         <div className='about__body'>
           <p>
-            I am a full-time dad with a passion for coding. I am a self-taught
-            front-end developer. I love designing and building user-friendly
-            interfaces that offer a good user experience.
+            I am a self-taught front-end developer and designer. I am a
+            full-time dad with a passion for coding. I love designing and
+            developing user-friendly interfaces that offer a good user
+            experience. I am you next best friend. Check out some of my many
+            project.
           </p>
+          <Link to='/projects'>Projects</Link>
         </div>
       </section>
     </main>

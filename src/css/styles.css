@@ -271,8 +271,7 @@ body {
   padding: 3rem 0;
   gap: 2rem;
   background-color: white;
-  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 0.4rem;
+  transition: all 0.6s ease-in-out;
 }
 .about__header {
   width: 100%;
@@ -293,12 +292,29 @@ body {
   padding: 0 3rem;
   display: grid;
   place-items: center;
+  gap: 2rem;
 }
 .about__body p {
   font-size: 1.8rem;
   font-weight: 300;
+  line-height: 3.5rem;
   text-align: center;
   color: #0b1614;
+}
+.about__body a {
+  font-weight: 300;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: white;
+  background-color: #e04e3e;
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.6s ease-in-out;
+}
+.about__body a:focus, .about__body a:hover {
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
+  background-color: #892116;
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px) {
