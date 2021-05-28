@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 const Header = () => {
   // const names = [Heze, Developer, Designer];
   return (
@@ -8,7 +10,7 @@ const Header = () => {
             Hi, I am <span> Heze </span>
           </h1>
           <h2>Welcome to my Website</h2>
-          
+          <Link to='/About'>About</Link>
         </div>
       </header>
     </>
