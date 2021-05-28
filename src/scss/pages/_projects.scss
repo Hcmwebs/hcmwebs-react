@@ -2,7 +2,6 @@
 
 .projects {
   width: 90%;
-  margin: 6rem auto;
   padding: 3rem 0;
   @include grid(center);
   gap: 1rem;
@@ -10,7 +9,6 @@
   border-radius: $borderRadius;
 
   &__item {
-  
     width: 90%;
     height: 15rem;
     margin: 2rem auto;
@@ -42,6 +40,5 @@
       @include flex(row, space-between, center);
       gap: 1rem;
     }
-
   }
 }

@@ -333,7 +333,6 @@ body {
 }
 .projects {
   width: 90%;
-  margin: 6rem auto;
   padding: 3rem 0;
   display: grid;
   place-items: center;
