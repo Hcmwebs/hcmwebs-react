@@ -2,7 +2,7 @@
 @use '../components/' as *;
 
 .about {
-  width: 80%;
+  width: 90%;
   @include flex(column, center, center);
   padding: 3rem 0;
   gap: 2rem;
