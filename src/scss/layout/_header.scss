@@ -8,53 +8,79 @@
   background-color: $bgColor;
 
   .heroText {
-    width: 90%;
+     width: 90%;
     max-width: 500px;
     padding: 3rem;
     border: none;
     border-radius: $borderRadius;
     box-shadow: $boxShadow;
     @include flex(column, space-between, center);
-    gap: 0.5rem;
     color: $secondaryTextColor;
     background-color: darken($bgColor, 10);
 
-    h1 {
-      font-size: clamp(3rem 6rem 8rem);
-      font-weight: 300;
-      margin: 0 auto;
-      text-align: center;
+    .title {
+      @include grid(center);
+      gap: 0.5rem;
 
-      span {
-        font-size: 7rem;
-        font-weight: 400;
-        padding: 0 2rem;
-        color: $secondaryColor;
+      h1 {
+        font-family: $headerFont;
+        font-size: clamp(3rem, 3vw, 8rem);
+        font-weight: 300;
+        margin: 0 auto;
+        text-align: center;
+        width: max-content;
+        position: relative;
+
+        span {
+          font-size: 7rem;
+          font-weight: 400;
+          padding: 0 2rem;
+          color: $secondaryColor;
+        }
+      }
+
+      p {
+        font-size: 2rem;
+        font-weight: 300;
+        opacity: 1;
+
+        &.first {
+          
+        }
+
+        &.second {
+        }
       }
     }
 
-    h2 {
-      font-size: clamp(2rem 3.5rem 5rem);
-      font-weight: 300;
-      padding: 1rem 0;
-      text-align: center;
-    }
+    .subtitle {
+      @include grid(center);
+      gap: 0.5rem;
+      // opacity: 0;
 
-    a {
-      font-weight: 300;
-      padding: 1.2rem 2.4rem;
-      border-radius: $borderRadius;
-      border: none;
-      color: $secondaryTextColor;
-      background-color: $secondaryColor;
-      box-shadow: $boxShadow;
-      transition: all 0.6s ease-in-out;
+      h2 {
+        font-size: clamp(2rem, 2vw, 5rem);
+        font-weight: 300;
+        padding: 1rem 0;
+        text-align: center;
+      }
 
-      &:focus,
-      &:hover {
-        box-shadow: $boxShadowHover;
-        background-color: darken($secondaryColor, 25);
-        transform: scale(1.1);
+      a {
+        font-weight: 300;
+        padding: 1.2rem 2.4rem;
+        border-radius: $borderRadius;
+        border: none;
+        color: $secondaryTextColor;
+        background-color: $secondaryColor;
+        box-shadow: $boxShadow;
+        transition: all 0.6s ease-in-out;
+
+        &:focus,
+        &:hover {
+          box-shadow: $boxShadowHover;
+          background-color: darken($secondaryColor, 25);
+          transform: scale(1.1);
+        }
       }
     }
   }

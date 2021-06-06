@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 h1 {
   font-size: 4.8rem;
 }
@@ -196,29 +196,46 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
   color: white;
   background-color: #146169;
 }
-.header .heroText h1 {
-  font-size: clamp(3rem 6rem 8rem);
+.header .heroText .title {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+.header .heroText .title h1 {
+  font-family: "Source Sans Pro", monospace;
+  font-size: clamp(3rem, 3vw, 8rem);
   font-weight: 300;
   margin: 0 auto;
   text-align: center;
+  width: max-content;
+  position: relative;
 }
-.header .heroText h1 span {
+.header .heroText .title h1 span {
   font-size: 7rem;
   font-weight: 400;
   padding: 0 2rem;
   color: #e04e3e;
 }
-.header .heroText h2 {
-  font-size: clamp(2rem 3.5rem 5rem);
+.header .heroText .title p {
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 1;
+}
+.header .heroText .subtitle {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+.header .heroText .subtitle h2 {
+  font-size: clamp(2rem, 2vw, 5rem);
   font-weight: 300;
   padding: 1rem 0;
   text-align: center;
 }
-.header .heroText a {
+.header .heroText .subtitle a {
   font-weight: 300;
   padding: 1.2rem 2.4rem;
   border-radius: 0.4rem;
@@ -228,7 +245,7 @@ body {
   box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.6s ease-in-out;
 }
-.header .heroText a:focus, .header .heroText a:hover {
+.header .heroText .subtitle a:focus, .header .heroText .subtitle a:hover {
   box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
   background-color: #892116;
   transform: scale(1.1);
