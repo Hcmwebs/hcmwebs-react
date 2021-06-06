@@ -6,12 +6,10 @@ const Header = () => {
     <>
       <header className='header'>
         <div className='heroText'>
-          <div className='title'>
-            <h1>Hi, I am Heze.</h1>
+          <h1>Hi, I am Heze.</h1>
+          <div className='subtitle'>
             <p className='first'>I am a Designer</p>
             <p className='second'>I am a Developer</p>
-          </div>
-          <div className='subtitle'>
             <h2>Welcome to my Website</h2>
             <Link to='/About'>About me</Link>
           </div>

@@ -8,7 +8,7 @@
   background-color: $bgColor;
 
   .heroText {
-     width: 90%;
+    width: 90%;
     max-width: 500px;
     padding: 3rem;
     border: none;
@@ -18,51 +18,48 @@
     color: $secondaryTextColor;
     background-color: darken($bgColor, 10);
 
-    .title {
-      @include grid(center);
-      gap: 0.5rem;
+    h1 {
+      font-family: $headerFont;
+      font-size: clamp(3rem, 3vw, 8rem);
+      font-weight: 300;
+      margin: 0 auto;
+      text-align: center;
+      width: max-content;
+      position: relative;
 
-      h1 {
-        font-family: $headerFont;
-        font-size: clamp(3rem, 3vw, 8rem);
-        font-weight: 300;
-        margin: 0 auto;
-        text-align: center;
-        width: max-content;
-        position: relative;
+      span {
+        font-size: 7rem;
+        font-weight: 400;
+        padding: 0 2rem;
+        color: $secondaryColor;
+      }
+    }
 
-        span {
-          font-size: 7rem;
-          font-weight: 400;
-          padding: 0 2rem;
-          color: $secondaryColor;
-        }
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      transform: translateY(2rem);
+      opacity: 0;
+
+      &.first {
       }
 
-      p {
-        font-size: 2rem;
-        font-weight: 300;
-        opacity: 1;
-
-        &.first {
-          
-        }
-
-        &.second {
-        }
+      &.second {
       }
     }
 
     .subtitle {
       @include grid(center);
       gap: 0.5rem;
-      // opacity: 0;
+
 
       h2 {
-        font-size: clamp(2rem, 2vw, 5rem);
+        font-size: clamp(1.8rem, 2vw, 5rem);
         font-weight: 300;
         padding: 1rem 0;
         text-align: center;
+        transform: translateY(2rem);
+        opacity: 0;
       }
 
       a {
@@ -74,6 +71,8 @@
         background-color: $secondaryColor;
         box-shadow: $boxShadow;
         transition: all 0.6s ease-in-out;
+        transform: translateY(2rem);
+        opacity: 0;
 
         &:focus,
         &:hover {
