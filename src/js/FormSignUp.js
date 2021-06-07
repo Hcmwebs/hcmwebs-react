@@ -9,7 +9,11 @@ const FormSignUp = ({ submitForm }) => {
 
   return (
     <>
-      <form className='form' onSubmit={handleSubmit}>
+      <form
+        action='hcmwebs@hcmwebs.com'
+        method='post'
+        className='form'
+        onSubmit={handleSubmit}>
         <div
           className={
             (values.fullname !== '' ? 'success' : 'error') + ' formGroup'
