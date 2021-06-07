@@ -5,7 +5,7 @@
   min-height: 100vh;
   margin: 0 auto;
   @include flex(row, center, center);
-  background-color: $bgColor;
+  background-color: $secondaryTextColor;
 
   .heroText {
     width: 90%;
@@ -13,14 +13,13 @@
     padding: 3rem;
     border: none;
     border-radius: $borderRadius;
-    box-shadow: $boxShadow;
     @include flex(column, space-between, center);
-    color: $secondaryTextColor;
-    background-color: darken($bgColor, 10);
+    color: $primaryTextColor;
+    background-color: $secondaryTextColor;
 
     h1 {
       font-family: $headerFont;
-      font-size: clamp(4rem, 5vw, 8rem);
+      font-size: clamp(4rem, 3vw, 7rem);
       font-weight: 300;
       margin: 0 auto;
       margin-bottom: 1rem;
@@ -35,13 +34,13 @@
         inset: 0;
       }
       &:before {
-        background-color: darken($bgColor, 10);
+        background-color: $secondaryTextColor;
         animation: typewriter $typewriterSpeed steps($typewriterCharacters) 1s
           forwards;
       }
       &::after {
         width: 0.125em;
-        background: #fff;
+        background: $primaryTextColor;
         animation: typewriter $typewriterSpeed steps($typewriterCharacters) 1s
             forwards,
           blink 750ms steps($typewriterCharacters) infinite;
@@ -51,7 +50,7 @@
         font-family: inherit;
         font-size: inherit;
         font-weight: inherit;
-        color: lighten($secondaryColor, 5);
+        color: $secondaryColor;
       }
     }
 

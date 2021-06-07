@@ -59,7 +59,7 @@ button:hover {
 }
 
 body {
-  background: #1c8894;
+  background: white;
 }
 
 .container {
@@ -199,7 +199,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #1c8894;
+  background-color: white;
 }
 .header .heroText {
   width: 90%;
@@ -207,17 +207,16 @@ body {
   padding: 3rem;
   border: none;
   border-radius: 0.4rem;
-  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  background-color: #146169;
+  color: #0b1614;
+  background-color: white;
 }
 .header .heroText h1 {
   font-family: "Poppins", monospace;
-  font-size: clamp(4rem, 5vw, 8rem);
+  font-size: clamp(4rem, 3vw, 7rem);
   font-weight: 300;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -231,19 +230,19 @@ body {
   inset: 0;
 }
 .header .heroText h1:before {
-  background-color: #146169;
+  background-color: white;
   animation: typewriter 6s steps(15) 1s forwards;
 }
 .header .heroText h1::after {
   width: 0.125em;
-  background: #fff;
+  background: #0b1614;
   animation: typewriter 6s steps(15) 1s forwards, blink 750ms steps(15) infinite;
 }
 .header .heroText h1 span {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  color: #e46254;
+  color: #e04e3e;
 }
 .header .heroText .subtitle {
   display: grid;
@@ -405,7 +404,7 @@ body {
   place-items: center;
   gap: 2rem;
   border-radius: 0.4rem;
-  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   background-color: #1c8894;
   transition: all 0.6s ease-in-out;
@@ -473,7 +472,7 @@ body {
   gap: 1rem;
   border-radius: 0.4rem;
   background-color: #1c8894;
-  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 .contact .form .formGroup {
   width: 100%;
