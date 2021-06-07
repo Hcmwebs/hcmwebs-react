@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background-color: transparent;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 h1 {
   font-size: 4.8rem;
 }
@@ -201,24 +217,33 @@ body {
 }
 .header .heroText h1 {
   font-family: "Source Sans Pro", monospace;
-  font-size: clamp(3rem, 3vw, 8rem);
+  font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 300;
   margin: 0 auto;
+  margin-bottom: 1rem;
   text-align: center;
   width: max-content;
   position: relative;
 }
-.header .heroText h1 span {
-  font-size: 7rem;
-  font-weight: 400;
-  padding: 0 2rem;
-  color: #e04e3e;
+.header .heroText h1:before, .header .heroText h1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
-.header .heroText p {
-  font-size: 1.6rem;
-  font-weight: 300;
-  transform: translateY(2rem);
-  opacity: 0;
+.header .heroText h1:before {
+  background-color: #18747f;
+  animation: typewriter 6s steps(15) 1s forwards;
+}
+.header .heroText h1::after {
+  width: 0.125em;
+  background: #fff;
+  animation: typewriter 6s steps(15) 1s forwards, blink 750ms steps(15) infinite;
+}
+.header .heroText h1 span {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  color: #e04e3e;
 }
 .header .heroText .subtitle {
   display: grid;
@@ -226,12 +251,13 @@ body {
   gap: 0.5rem;
 }
 .header .heroText .subtitle h2 {
-  font-size: clamp(1.8rem, 2vw, 5rem);
+  font-size: clamp(2rem, 2vw, 4rem);
   font-weight: 300;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   text-align: center;
   transform: translateY(2rem);
   opacity: 0;
+  animation: fadeInUp 2s ease 15s forwards;
 }
 .header .heroText .subtitle a {
   font-weight: 300;
@@ -244,11 +270,25 @@ body {
   transition: all 0.6s ease-in-out;
   transform: translateY(2rem);
   opacity: 0;
+  animation: fadeInUp 2s ease 18s forwards;
 }
 .header .heroText .subtitle a:focus, .header .heroText .subtitle a:hover {
   box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
   background-color: #892116;
   transform: scale(1.1);
+}
+.header .heroText .subtitle p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  transform: translateY(2rem);
+  opacity: 0;
+  animation: fadeInUp 2s ease 6s forwards;
+}
+.header .heroText .subtitle p.first {
+  animation-delay: 9s;
+}
+.header .heroText .subtitle p.second {
+  animation-delay: 12s;
 }
 
 .btn__primary {
