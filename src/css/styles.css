@@ -217,8 +217,8 @@ body {
 }
 .header .heroText h1 {
   font-family: "Source Sans Pro", monospace;
-  font-size: clamp(4rem, 10vw, 8rem);
-  font-weight: 300;
+  font-size: clamp(4rem, 5vw, 8rem);
+  font-weight: 600;
   margin: 0 auto;
   margin-bottom: 1rem;
   text-align: center;
@@ -231,7 +231,7 @@ body {
   inset: 0;
 }
 .header .heroText h1:before {
-  background-color: #18747f;
+  background-color: #146169;
   animation: typewriter 6s steps(15) 1s forwards;
 }
 .header .heroText h1::after {
@@ -242,8 +242,8 @@ body {
 .header .heroText h1 span {
   font-family: inherit;
   font-size: inherit;
-  font-weight: 400;
-  color: #e04e3e;
+  font-weight: inherit;
+  color: #e46254;
 }
 .header .heroText .subtitle {
   display: grid;
@@ -252,7 +252,7 @@ body {
 }
 .header .heroText .subtitle h2 {
   font-size: clamp(2rem, 2vw, 4rem);
-  font-weight: 300;
+  font-weight: 600;
   padding: 1rem 2rem;
   text-align: center;
   transform: translateY(2rem);
