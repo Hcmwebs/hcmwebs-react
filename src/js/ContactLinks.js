@@ -9,7 +9,7 @@ const ContactLinks = ({ Github, Twitter, Email }) => {
       <a href='https://twitter.com/hcmwebs' target='_blank' rel='noreferrer'>
         <Twitter />
       </a>
-      <Link to='/Contact' target='_blank' rel='noreferrer'>
+      <Link to='/Contact'>
         <Email />
       </Link>
     </>
