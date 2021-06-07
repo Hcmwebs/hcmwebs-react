@@ -1,8 +1,9 @@
-import { GiToyMallet, GiShoppingCart } from 'react-icons/gi';
+import { GiShoppingCart } from 'react-icons/gi';
 import { BsGrid3X2GapFill, BsChatQuoteFill } from 'react-icons/bs';
-import { TiWeatherPartlySunny } from 'react-icons/ti';
+import { TiUser } from 'react-icons/ti';
 import { RiQuestionAnswerFill } from 'react-icons/ri';
 import { FaGlobeAmericas } from 'react-icons/fa';
+import { VscPreview } from 'react-icons/vsc';
 const Project = () => {
   return (
     <>
@@ -30,13 +31,13 @@ const Project = () => {
       </div>
       <div className='projects__item'>
         <a
-          href='https://whackamole-5t4gkvwb2-hcmwebs.vercel.app/'
+          href='https://article-preview-component-l7qqqfk96.vercel.app/'
           target='_blank'
           rel='noreferrer'>
           <span>
-            <GiToyMallet />
+            <VscPreview />
           </span>
-          Whack-a-Darth-Vader
+          Article Preview
         </a>
       </div>
       <div className='projects__item'>
@@ -52,13 +53,13 @@ const Project = () => {
       </div>
       <div className='projects__item'>
         <a
-          href='https://weather-app-jpdbx25om.vercel.app'
+          href='https://profile-card-component-ddqvuqlpq-hcmwebs.vercel.app/'
           target='_blank'
           rel='noreferrer'>
           <span>
-            <TiWeatherPartlySunny />
+            <TiUser />
           </span>
-          Weather app
+          Profile Card Component
         </a>
       </div>
       <div className='projects__item'>
