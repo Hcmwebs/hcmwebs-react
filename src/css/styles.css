@@ -231,12 +231,12 @@ body {
 }
 .header .heroText h1:before {
   background-color: white;
-  animation: typewriter 6s steps(15) 1s forwards;
+  animation: typewriter 4s steps(15) 1s forwards;
 }
 .header .heroText h1::after {
   width: 0.125em;
   background: #0b1614;
-  animation: typewriter 6s steps(15) 1s forwards, blink 750ms steps(15) infinite;
+  animation: typewriter 4s steps(15) 1s forwards, blink 1s steps(15) infinite;
 }
 .header .heroText h1 span {
   font-family: inherit;
@@ -256,7 +256,7 @@ body {
   text-align: center;
   transform: translateY(2rem);
   opacity: 0;
-  animation: fadeInUp 2s ease 15s forwards;
+  animation: fadeInUp 2s ease 13s forwards;
 }
 .header .heroText .subtitle a {
   font-weight: 300;
@@ -269,7 +269,7 @@ body {
   transition: all 0.6s ease-in-out;
   transform: translateY(2rem);
   opacity: 0;
-  animation: fadeInUp 2s ease 18s forwards;
+  animation: fadeInUp 2s ease 16s forwards;
 }
 .header .heroText .subtitle a:focus, .header .heroText .subtitle a:hover {
   box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
@@ -281,13 +281,13 @@ body {
   font-weight: 300;
   transform: translateY(2rem);
   opacity: 0;
-  animation: fadeInUp 2s ease 6s forwards;
+  animation: fadeInUp 2s ease 4s forwards;
 }
 .header .heroText .subtitle p.first {
-  animation-delay: 9s;
+  animation-delay: 7s;
 }
 .header .heroText .subtitle p.second {
-  animation-delay: 12s;
+  animation-delay: 10s;
 }
 
 .btn__primary {

@@ -43,7 +43,7 @@
         background: $primaryTextColor;
         animation: typewriter $typewriterSpeed steps($typewriterCharacters) 1s
             forwards,
-          blink 750ms steps($typewriterCharacters) infinite;
+          blink 1s steps($typewriterCharacters) infinite;
       }
 
       span {
