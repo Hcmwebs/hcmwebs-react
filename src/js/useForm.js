@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
@@ -8,6 +9,7 @@ const useForm = (callback, validate) => {
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const history = useHistory();
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -19,8 +21,18 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    const form = { values };
     setErrors(validate(values));
     setIsSubmitting(true);
+    fetch('http://localhost:8000/contacts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    }).then(() => {
+      console.log('new form Added');
+      setIsSubmitting(false);
+      history.push('/');
+    });
   };
 
   useEffect(() => {
@@ -29,7 +41,13 @@ const useForm = (callback, validate) => {
     }
   }, [errors, callback, isSubmitting]);
 
-  return { handleChange, values, handleSubmit, errors };
+  return {
+    handleChange,
+    values,
+    handleSubmit,
+    errors,
+    isSubmitting,
+  };
 };
 
 export default useForm;

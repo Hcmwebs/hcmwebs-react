@@ -2,18 +2,14 @@ import useForm from './useForm';
 import validate from './ValidateForm';
 
 const FormSignUp = ({ submitForm }) => {
-  const { handleChange, values, handleSubmit, errors } = useForm(
+  const { handleChange, values, handleSubmit, errors, isSubmitting } = useForm(
     submitForm,
     validate
   );
 
   return (
     <>
-      <form
-        action='hcmwebs@hcmwebs.com'
-        method='post'
-        className='form'
-        onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         <div
           className={
             (values.fullname !== '' ? 'success' : 'error') + ' formGroup'
@@ -62,11 +58,19 @@ const FormSignUp = ({ submitForm }) => {
           {errors.comments !== '' ? <small>{errors.comments}</small> : ''}
         </div>
 
-        <button
-          type='submit'
-          className={(errors === '' ? 'success' : 'error') + ' btn'}>
-          Send
-        </button>
+        {!isSubmitting && (
+          <button className='btn' type='submit'>
+            Send
+          </button>
+        )}
+        {isSubmitting && (
+          <button className='btn' type='submit' disabled>
+            Sending...
+          </button>
+        )}
+        <p>{values.fullname}</p>
+        <p>{values.email}</p>
+        <p>{values.comments}</p>
       </form>
     </>
   );
